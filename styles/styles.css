@@ -216,4 +216,51 @@ img {
   width: 80%;
   max-width: 1440px;
   margin: auto;
+  position: relative;
+}
+
+body {
+  height: 100vh;
+}
+
+img {
+  width: calc(100% / 3);
+  height: calc(80vh / 3);
+}
+
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.instructionModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  z-index: 1;
+  text-align: center;
+}
+
+.totalScore {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.currentScore {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
