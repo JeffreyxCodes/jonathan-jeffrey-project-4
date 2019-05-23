@@ -179,13 +179,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-body {
-  height: 100vh;
-}
-
-img {
-  width: calc(100% / 3);
-  height: calc(80vh / 3);
+h1 {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .cover {
@@ -200,4 +196,24 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+}
+
+img {
+  width: calc(100% / 3);
+  height: calc(80vh / 3);
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
 }

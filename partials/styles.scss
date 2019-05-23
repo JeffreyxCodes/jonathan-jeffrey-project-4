@@ -1,2 +1,19 @@
 @import "./setup";
+@import "./typography";
 @import "./gallery";
+@import "./form";
+
+body {
+  height: 100vh;
+}
+
+img {
+  width: calc(100% / 3);
+  height: calc(80vh / 3);
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+}
