@@ -1,6 +1,20 @@
 const app = {};
 
 app.index = Object.keys(songArray);
+app.quizList = [];
+
+app.setQuizList = function() {
+    const length = app.index.length;
+    let itemIndex;
+
+    for (let i = 0; i < length; i++) {
+        itemIndex = Math.floor(Math.random() * app.index.length);
+        app.quizList.push(app.index.splice(itemIndex, 1));
+    }
+
+    console.log(app.quizList);
+    console.log("index array: ", app.index);
+}
 
 app.getImagePromise = function(q) {
     return $.ajax({
@@ -15,28 +29,28 @@ app.getImagePromise = function(q) {
 }
 
 app.getImages = function() {
-    const a = [];
-    // console.log(songArray[0].convert[0]);
+    const imgPromises = [];
+
     for (let i = 0; i < 9; i++) {
-        console.log(typeof songArray[0].convert);
-        a.push(app.getImagePromise(songArray[0].convert[i])); 
+        imgPromises.push(app.getImagePromise(songArray[0].convert[i])); 
     };
 
-    $.when(...a)
-        .then((...img) => {
-            a.map(img => {
-                `<img class="cover" src="${img.hits[0].webformatURL}" alt="${img.hits[0].tags}">`
+    $.when(...imgPromises)
+        .then((...images) => {
+            images = images.map(img => {
+                return `<img class="cover" src=${img[0].hits[0].webformatURL} alt="${img[0].hits[0].tags}">`;
             });
+
+            $(`.gallery`).html(images);
         })
         .fail(error => {
             console.log(error);
         });
-    
-    $(`.gallery`).html(a);
 }
 
 app.init = function() {
-    app.getImages();
+    app.setQuizList();
+    // app.getImages();
 }
 
 $(function() {
