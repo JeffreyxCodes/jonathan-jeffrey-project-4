@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+}
+img {
+  width: calc(100% / 3);
+  height: calc(80vh / 3);
+}
+.cover {
+  object-fit: cover;
+}
+.gallery {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+// .galleryItem {
+//   width: calc(100% / 3);
+//   height: calc(80vh / 3);
+// }

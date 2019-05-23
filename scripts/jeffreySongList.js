@@ -1,19 +1,19 @@
 const songArray = [
-    {
-        artist: "Lukas Graham",
-        track: "7 Years",
-        convert: [
-            "number+7",
-            "mother",
-            "world+map",
-            "marijuana",
-            "beer",
-            "father",
-            "children",
-            "elder",
-            "letter"
-        ],
-        lyric: `Once I was seven years old, my mama told me
+  {
+    artist: "Lukas Graham",
+    track: "7 Years",
+    convert: [
+      "number+7",
+      "mother",
+      "world+map",
+      "marijuana",
+      "beer",
+      "father",
+      "children",
+      "elder",
+      "letter"
+    ],
+    lyric: `Once I was seven years old, my mama told me
             "Go make yourself some friends or you'll be lonely"
             Once I was seven years old
 
@@ -77,22 +77,22 @@ const songArray = [
             Once I was seven years old
 
             Once I was seven years old`
-    },
-    {
-        artist: "Queen",
-        track: "Bohemian Rhapsody",
-        convert: [
-            "reality",
-            "open+eye",
-            "poor+boy",
-            "gun",
-            "cry",
-            "thunderbolt",
-            "galileo",
-            "satan",
-            "spit+water"
-        ],
-        lyric: `Is this the real life?
+  },
+  {
+    artist: "Queen",
+    track: "Bohemian Rhapsody",
+    convert: [
+      "reality",
+      "open+eye",
+      "poor+boy",
+      "gun",
+      "cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
+    lyric: `Is this the real life?
             Is this just fantasy?
             Caught in a landslide,
             No escape from reality.
@@ -162,22 +162,22 @@ const songArray = [
             Nothing really matters to me.
 
             Any way the wind blows.`
-    },
-    {
-        artist: "OneRepublic",
-        track: "Counting Stars",
-        convert: [
-            "insomnia",
-            "baby",
-            "amen",
-            "dollar",
-            "stars",
-            "heart",
-            "across+the+line",
-            "old+and+young",
-            "moral"
-        ],
-        lyric: `Lately, I've been, I've been losing sleep
+  },
+  {
+    artist: "OneRepublic",
+    track: "Counting Stars",
+    convert: [
+      "insomnia",
+      "baby",
+      "amen",
+      "dollar",
+      "stars",
+      "heart",
+      "across+the+line",
+      "old+and+young",
+      "moral"
+    ],
+    lyric: `Lately, I've been, I've been losing sleep
             Dreaming about the things that we could be
             But, baby, I've been, I've been praying hard
             Said no more counting dollars
@@ -270,22 +270,22 @@ const songArray = [
             Sink in the river the lessons I've learned
             Take that money watch it burn
             Sink in the river the lessons I've learned`
-    },
-    {
-        artist: "Macklemore",
-        track: "Glorious",
-        convert: [
-            "sprint",
-            "delorean",
-            "sleep",
-            "pumpkin+pie",
-            "key+chain",
-            "blue+planet",
-            "mud",
-            "street",
-            "sunrise"
-        ],
-        lyric: `You know I'm back like I never left
+  },
+  {
+    artist: "Macklemore",
+    track: "Glorious",
+    convert: [
+      "sprint",
+      "delorean",
+      "sleep",
+      "pumpkin+pie",
+      "key+chain",
+      "blue+planet",
+      "mud",
+      "street",
+      "sunrise"
+    ],
+    lyric: `You know I'm back like I never left
             Another sprint, another step
             Another day, another breath
             Been chasing dreams, but I never slept
@@ -354,22 +354,22 @@ const songArray = [
             And now I see the sunrise
             Now I feel glorious, glorious
             I feel glorious, glorious`
-    },
-    {
-        artist: "Sia",
-        track: "Chandelier",
-        convert: [
-            "cellphone",
-            "doorbell",
-            "love",
-            "whisky+glass",
-            "chandelier",
-            "bird",
-            "wine+glass",
-            "sun",
-            "shame"
-        ],
-        lyric: `Party girls don't get hurt
+  },
+  {
+    artist: "Sia",
+    track: "Chandelier",
+    convert: [
+      "cellphone",
+      "doorbell",
+      "love",
+      "whisky+glass",
+      "chandelier",
+      "bird",
+      "wine+glass",
+      "sun",
+      "shame"
+    ],
+    lyric: `Party girls don't get hurt
             Can't feel anything, when will I learn
             I push it down, push it down
 
@@ -427,22 +427,22 @@ const songArray = [
             Oh, I'm just holding on for tonight
             On for tonight
             On for tonight`
-    },
-    {
-        artist: "Adele",
-        track: "Rolling In The Deep",
-        convert: [
-            "fire+carbon",
-            "heart",
-            "crystal+rock",
-            "book",
-            "tear+drop",
-            "scar+wound+arm",
-            "door+wall",
-            "treasure+gold",
-            "grip+hand+palm"
-        ],
-        lyric: `There's a fire starting in my heart
+  },
+  {
+    artist: "Adele",
+    track: "Rolling In The Deep",
+    convert: [
+      "fire+carbon",
+      "heart",
+      "crystal+rock",
+      "book",
+      "tear+drop",
+      "scar+wound+arm",
+      "door+wall",
+      "treasure+gold",
+      "grip+hand+palm"
+    ],
+    lyric: `There's a fire starting in my heart
             Reaching a fever pitch, it's bringing me out the dark
             Finally I can see you crystal clear
             Go 'head and sell me out and I'll lay your ship bare
@@ -526,22 +526,22 @@ const songArray = [
             You played it
             You played it
             You played it to the beat.`
-    },
-    {
-        artist: "Eminem",
-        track: "Beautiful",
-        convert: [
-            "depression",
-            "garbage",
-            "bruises",
-            "mic",
-            "pen+compose",
-            "shoe+used",
-            "eye+focus",
-            "celsius",
-            "door"
-        ],
-        lyric: `Lately I've been hard to reach, I've been too long on my own
+  },
+  {
+    artist: "Eminem",
+    track: "Beautiful",
+    convert: [
+      "depression",
+      "garbage",
+      "bruises",
+      "mic",
+      "pen+compose",
+      "shoe+used",
+      "eye+focus",
+      "celsius",
+      "door"
+    ],
+    lyric: `Lately I've been hard to reach, I've been too long on my own
             Everybody has a private world where they can be alone
             Are you calling me? Are you trying to get through?
             Are you reaching out for me, like I'm reaching out for you?
@@ -681,22 +681,22 @@ const songArray = [
             Even if it sounds corny,
             Don't ever let no one tell you, you ain't beautiful
             So...`
-    },
-    {
-        artist: "Ylvis",
-        track: "The Fox",
-        convert: [
-            "puppy",
-            "cat",
-            "bird",
-            "mouse+animal",
-            "cow",
-            "frog",
-            "elephant",
-            "duck",
-            "fox+red"
-        ],
-        lyric: `Dog goes woof, cat goes meow
+  },
+  {
+    artist: "Ylvis",
+    track: "The Fox",
+    convert: [
+      "puppy",
+      "cat",
+      "bird",
+      "mouse+animal",
+      "cow",
+      "frog",
+      "elephant",
+      "duck",
+      "fox+red"
+    ],
+    lyric: `Dog goes woof, cat goes meow
             Bird goes tweet, and mouse goes squeak
             Cow goes moo. Frog goes croak, and the elephant goes toot
             Ducks say quack and fish go blub, and the seal goes ow ow ow
@@ -757,22 +757,22 @@ const songArray = [
             I want to, I want to, I want to know!
             A-bubu-duh-bubu-dwee-dum
             Bay-buh-day bum-bum bay-dum`
-    },
-    {
-        artist: "Coldplay",
-        track: "Viva La Vida",
-        convert: [
-            "blue+planet",
-            "sea",
-            "sleep",
-            "street",
-            "dice",
-            "key+chain",
-            "wall",
-            "sand",
-            "sword"
-        ],
-        lyric: `I used to rule the world
+  },
+  {
+    artist: "Coldplay",
+    track: "Viva La Vida",
+    convert: [
+      "blue+planet",
+      "sea",
+      "sleep",
+      "street",
+      "dice",
+      "key+chain",
+      "wall",
+      "sand",
+      "sword"
+    ],
+    lyric: `I used to rule the world
             Seas would rise when I gave the word
             Now in the morning I sleep alone
             Sweep the streets I used to own
@@ -823,141 +823,82 @@ const songArray = [
             I know St. Peter won't call my name
             Never an honest word
             But that was when I ruled the world`
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
-    {
-        artist: "",
-        track: "",
-        convert: [
-
-        ],
-        lyric: ``
-    },
+  },
+  {
+    artist: "Bruno Mars",
+    track: "Uptown Funk",
+    convert: [
+      "Ice",
+      "Gold",
+      "Masterpieces",
+      "City",
+      "Chucks",
+      "Kiss",
+      "Hot",
+      "Police",
+      "Fireman"
+    ],
+    lyric: ` This hit, that ice cold
+            Michelle Pfeiffer, that white gold
+            This one for them hood girls
+            Them good girls straight masterpieces
+            Stylin', wilin', livin' it up in the city
+            Got Chucks on with Saint Laurent
+            Got kiss myself, I'm so pretty
+            I'm too hot (hot damn)
+            Called a police and a fireman
+            I'm too hot (hot damn)
+            Make a dragon wanna retire man
+            I'm too hot (hot damn)
+            Say my name you know who I am
+            I'm too hot (hot damn)
+            Am I bad 'bout that money, break it down
+            Girls hit your hallelujah (whoo)
+            Girls hit your hallelujah (whoo)
+            Girls hit your hallelujah (whoo)
+            'Cause uptown funk gon' give it to you
+            'Cause uptown funk gon' give it to you
+            'Cause uptown funk gon' give it to you
+            Saturday night and we in the spot
+            Don't believe me just watch (come on)
+            Don't believe…`
+  },
+  {
+    artist: "The Beatles",
+    track: "Lucy in the Sky with Diamonds",
+    convert: [
+      "Picture",
+      "Boat",
+      "Tangerine",
+      "Trees",
+      "Skies",
+      "Kaleidoscope",
+      "Eyes",
+      "Flowers",
+      "Diamonds"
+    ],
+    lyric: ` Picture yourself in a boat on a river
+              With tangerine trees and marmalade skies.
+              Somebody calls you, you answer quite slowly,
+              A girl with kaleidoscope eyes.
+              Cellophane flowers of yellow and green
+              Towering over your head.
+              Look for the girl with the sun in her eyes
+              And she's gone.
+              Lucy in the sky with diamonds
+              Lucy in the sky with diamonds
+              Lucy in the sky with diamonds, ah, ah
+              Follow her down to a bridge by the fountain
+              Where rocking horse people eat marshmallow pies.
+              Everyone smiles as you drift past the flowers
+              That grow so incredibly high.
+              Newspaper taxis appear on the shore
+              Waiting to take you away
+              Climb in the back with your head in the clouds 
+              And you're gone.
+              Picture yourself on a train in a station
+              With plasticine porters with looking glass ties,
+              Suddenly someone is there at the turnstile,
+              The girl with kaleidoscope eyes.`
+  }
 ];
