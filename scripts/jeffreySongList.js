@@ -683,20 +683,146 @@ const songArray = [
             So...`
     },
     {
-        artist: "",
-        track: "",
+        artist: "Ylvis",
+        track: "The Fox",
         convert: [
-
+            "puppy",
+            "cat",
+            "bird",
+            "mouse+animal",
+            "cow",
+            "frog",
+            "elephant",
+            "duck",
+            "fox+red"
         ],
-        lyric: ``
+        lyric: `Dog goes woof, cat goes meow
+            Bird goes tweet, and mouse goes squeak
+            Cow goes moo. Frog goes croak, and the elephant goes toot
+            Ducks say quack and fish go blub, and the seal goes ow ow ow
+            But there's one sound that no one knows...
+            What does the fox say?
+
+            Ring-ding-ding-ding-dingeringeding!
+            Gering-ding-ding-ding-dingeringeding!
+            Gering-ding-ding-ding-dingeringeding!
+            What the fox say?
+            Wa-pa-pa-pa-pa-pa-pow!
+            Wa-pa-pa-pa-pa-pa-pow!
+            Wa-pa-pa-pa-pa-pa-pow!
+            What the fox say?
+            Hatee-hatee-hatee-ho!
+            Hatee-hatee-hatee-ho!
+            Hatee-hatee-hatee-ho!
+            What the fox say?
+            Joff-tchoff-tchoff-tchoffo-tchoffo-tchoff!
+            Joff-tchoff-tchoff-tchoffo-tchoffo-tchoff!
+            Joff-tchoff-tchoff-tchoffo-tchoffo-tchoff!
+            What the fox say?
+
+            Big blue eyes, pointy nose, chasing mice, and digging holes
+            Tiny paws, up the hill, suddenly you're standing still
+
+            Your fur is red, so beautiful, like an angel in disguise
+            But if you meet a friendly horse, will you communicate by mo-o-o-o-orse, mo-o-o-o-orse, mo-o-o-o-orse?
+            How will you speak to that h-o-o-orse, h-o-o-orse, h-o-o-orse?
+            What does the fox say?!
+
+            Jacha-chacha-chacha-chow!
+            Jacha-chacha-chacha-chow!
+            Jacha-chacha-chacha-chow!
+            What the fox say?
+            Fraka-kaka-kaka-kaka-kow!
+            Fraka-kaka-kaka-kaka-kow!
+            Fraka-kaka-kaka-kaka-kow!
+            What the fox say?
+            A-hee-ahee ha-hee!
+            A-hee-ahee ha-hee!
+            A-hee-ahee ha-hee!
+            What the fox say?
+            A-oo-oo-oo-ooo!
+            Woo-oo-oo-ooo!
+            What does the fox say?!
+
+            The secret of the fox, ancient mystery
+            Somewhere deep in the woods, I know you're hiding
+            What is your sound? Will we ever know?
+            Will always be a mystery what do you say?
+
+            You're my guardian angel hiding in the woods
+            What is your sound?
+            A-bubu-duh-bubu-dwee-dum a-bubu-duh-bubu-dwee-dum
+            Will we ever know?
+            A-bubu-duh-bubu-dwee-dum
+            I want to, I want to, I want to know!
+            A-bubu-duh-bubu-dwee-dum
+            Bay-buh-day bum-bum bay-dum`
     },
     {
-        artist: "",
-        track: "",
+        artist: "Coldplay",
+        track: "Viva La Vida",
         convert: [
-
+            "blue+planet",
+            "sea",
+            "sleep",
+            "street",
+            "dice",
+            "key+chain",
+            "wall",
+            "sand",
+            "sword"
         ],
-        lyric: ``
+        lyric: `I used to rule the world
+            Seas would rise when I gave the word
+            Now in the morning I sleep alone
+            Sweep the streets I used to own
+
+            I used to roll the dice
+            Feel the fear in my enemy's eyes
+            Listened as the crowd would sing,
+            "Now the old king is dead! Long live the king!"
+            One minute I held the key
+            Next the walls were closed on me
+            And I discovered that my castles stand
+            Upon pillars of salt and pillars of sand
+
+            I hear Jerusalem bells a-ringing
+            Roman cavalry choirs are singing
+            Be my mirror, my sword and shield
+            My missionaries in a foreign field
+            For some reason I can't explain
+            Once you'd gone there was never
+            Never an honest word
+            And that was when I ruled the world
+
+            It was a wicked and wild wind
+            Blew down the doors to let me in
+            Shattered windows and the sound of drums
+            People couldn't believe what I'd become
+            Revolutionaries wait
+            For my head on a silver plate
+            Just a puppet on a lonely string
+            Oh who would ever want to be king?
+
+            I hear Jerusalem bells a-ringing
+            Roman cavalry choirs are singing
+            Be my mirror, my sword and shield
+            My missionaries in a foreign field
+            For some reason I can't explain
+            I know St. Peter won't call my name
+            Never an honest word
+            But that was when I ruled the world
+
+            Oh, oh, oh, oh, oh, oh [5x]
+
+            Hear Jerusalem bells a-ringing
+            Roman cavalry choirs are singing
+            Be my mirror, my sword and shield
+            My missionaries in a foreign field
+            For some reason I can't explain
+            I know St. Peter won't call my name
+            Never an honest word
+            But that was when I ruled the world`
     },
     {
         artist: "",
