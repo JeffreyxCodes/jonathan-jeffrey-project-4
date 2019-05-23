@@ -28,15 +28,15 @@
         max-width: 1200px; */
         margin: 0 auto;
       }
-      h1,
-      p {
+
+      h1 {
         text-align: center;
-        color: rgb(2, 1, 1);
+        color: white;
       }
       h1 {
-        padding-top: 7vh;
-        font-size: 2.5vw;
+        font-size: 4vw;
         text-transform: uppercase;
+        height: 10vh;
       }
       p {
         padding-top: 100px;
@@ -54,7 +54,7 @@
       .flexItem {
         /* align-self: center; */
         width: 33.33%;
-        height: 33.33vh;
+        height: 25vh;
       }
       .overlay {
         position: absolute;
@@ -62,27 +62,33 @@
         right: 0;
         bottom: 0;
         left: 0;
-
-        padding: 30px 0 0 0;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 30px 20px 0;
       }
-      /* .overlay2 {
-        position: absolute;
-        top: 0;
-        right: 20%;
-        bottom: 0;
-        left: 0;
-        z-index: 2;
-        background: black;
-      } */
       img {
         max-width: 100%;
         display: block;
         /* object-fit: cover; */
       }
+      form {
+        text-align: center;
+        padding-top: 20px;
+      }
+      select,
+      [type="submit"] {
+        color: black;
+        background: white;
+        height: 40px;
+        padding: 0 8px;
+        transition: 0.5s ease;
+      }
+      select:hover {
+        color: white;
+        background: black;
+        padding: 0 8px;
+      }
+
       @media (max-width: 1100px) {
-        .flexContainer {
-          margin-top: 16.66vh;
-        }
         .flexItem {
           width: 50%;
         }
@@ -96,6 +102,9 @@
         }
       }
       @media (max-width: 900px) {
+        h1 {
+          font-size: 2rem;
+        }
         .flexContainer {
           margin-top: 0;
         }
@@ -120,6 +129,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <h1>Just Picture The Lyrics</h1>
       <div class="flexContainer">
         <!-- <div class="flexItem1"></div> -->
         <img class="flexItem animated flipInY" src="./images/1.jpg" alt="" />
@@ -132,22 +142,26 @@
         <img class="flexItem animated flipInX" src="./images/7.5.jpg" alt="" />
         <img class="flexItem animated flipInY" src="./images/8.jpg" alt="" />
         <div class="overlay">
-          <h1>Just Picture The Lyrics</h1>
-          <!-- <p>This is an example of the song uptown funk by bruno mars</p> -->
-          <form action="">
-            <label for=""></label>
-            <select name="songs" id="songs">
-              <option value="">Yellow by Coldplay</option>
-              <option value="">Uptown Funk by Bruno Mars</option>
-              <option value="">Hey Jude by The Beatles</option>
-              <option value="">Take it to the Limit by The Eagles</option>
-            </select>
-            <input type="submit" value="This is my final decision" />
-          </form>
+          <h2>Instructions</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id mollitia
+            nam veritatis perferendis dolore veniam consectetur, vel voluptatum
+            cupiditate minus consequatur harum facere ut eligendi officiis.
+            Provident soluta totam expedita!
+          </p>
         </div>
-        <!-- <div class="overlay2"></div> -->
         <!-- <img class="flexItem" src="./images/9.jpg" alt="" /> -->
       </div>
+      <form action="">
+        <label for=""></label>
+        <select name="songs" id="songs">
+          <option value="">Yellow by Coldplay</option>
+          <option value="">Uptown Funk by Bruno Mars</option>
+          <option value="">Hey Jude by The Beatles</option>
+          <option value="">Take it to the Limit by The Eagles</option>
+        </select>
+        <input type="submit" value="submit" />
+      </form>
     </div>
   </body>
 </html>
