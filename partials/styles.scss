@@ -7,32 +7,18 @@ body {
   height: 100vh;
 }
 
-img {
-  width: calc(100% / 3);
-  height: calc(80vh / 3);
-}
-
 .wrapper {
   width: 80%;
   max-width: 1440px;
   margin: auto;
   position: relative;
 }
-body {
-  height: 100vh;
-}
-img {
-  width: calc(100% / 3);
-  height: calc(80vh / 3);
-}
-.cover {
-  object-fit: cover;
-}
-.gallery {
-  height: 80vh;
-  display: flex;
-  flex-wrap: wrap;
-}
+
+
+
+
+
+
 .instructionModal {
   position: absolute;
   top: 0;
@@ -43,6 +29,11 @@ img {
   z-index: 1;
   text-align: center;
 }
+
+
+
+
+
 .totalScore {
   position: absolute;
   top: 0;
@@ -53,3 +44,37 @@ img {
   top: 0;
   right: 0;
 }
+
+
+
+
+
+.gallery {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+    position: relative;
+    width: calc(100% / 3);
+    height: calc(80vh / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hint {
+    position: absolute;
+    display: none;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.cover {
+  object-fit: cover;
+}
+
