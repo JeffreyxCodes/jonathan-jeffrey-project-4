@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Just Picture The Lyric</title>
-    <link href="./styles/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <main>
-      <div class="wrapper">
-        <h1>Just Picture The Lyrics</h1>
-        <h3 class="totalScore">Total Score: <span>0</span></h3>
-        <h3 class="currentScore">Current Score: <span>4</span></h3>
-        <div class="instructionModal">
-          <div class="wrapper">
-            <h2>Instructions</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              incidunt voluptatibus explicabo illo, minus laboriosam expedita
-              esse, nisi sit cum dolorum debitis laborum nostrum ut consequatur
-              consequuntur optio aliquam aliquid.
-            </p>
-            <button>Start</button>
-          </div>
-        </div>
 
-        <section class="gallery"></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Just Picture The Lyric</title>
+  <link href="./styles/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <h1>Just Picture The Lyrics</h1>
+
+      <h3 class="totalScore">Total Score: <span>0</span></h3>
+      <h3 class="currentScore">Current Score: <span>4</span></h3>
+
+      <div class="instructionModal">
+        <div class="wrapper">
+          <h2>Instructions</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            incidunt voluptatibus explicabo illo, minus laboriosam expedita
+            esse, nisi sit cum dolorum debitis laborum nostrum ut consequatur
+            consequuntur optio aliquam aliquid.
+          </p>
+          <button>Start</button>
+        </div>
+      </div>
+
+      <section class="gallery"></section>
+
+      <section class="control">
         <form action="">
           <select name="songChoices" id="songChoices">
             <option value="">test</option>
           </select>
           <input type="submit" value="submit" />
         </form>
-      </div>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./scripts/jeffreySongList.js"></script>
-    <script src="./scripts/script.js"></script>
-  </body>
+        <div class="guessResult">
+          <h2>Correct/Wrong</h2>
+          <button>Next Song</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./scripts/jeffreySongList.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
 </html>

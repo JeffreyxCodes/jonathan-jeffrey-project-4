@@ -278,7 +278,19 @@ body {
   height: 100%;
 }
 
+.showHint .hint {
+  display: block;
+}
+
+.showHint img {
+  opacity: 0.2;
+}
+
 .cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.guessResult {
+  display: none;
 }

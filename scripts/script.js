@@ -5,6 +5,7 @@ app.$select = $(`select`);
 app.$gallery = $(`.gallery`);
 app.$total = $(`.totalScore span`);
 app.$current = $(`.currentScore span`);
+app.$guessResult = $(`.guessResult`);
 
 app.totalScore = 0;
 app.currentScore = 4;
@@ -61,8 +62,8 @@ app.getImages = function () {
 
     $.when(...imgPromises)
         .then((...images) => {
-            images = images.map(img => {
-                return `<div class="imgContainer">
+            images = images.map((img, index) => {
+                return `<div class="imgContainer item${index}">
                             <h2 class="hint">${img[0].hits[0].tags}</h2>
                             <img class="cover" src=${img[0].hits[0].webformatURL} alt="${img[0].hits[0].tags}">
                         </div>`;
@@ -95,12 +96,18 @@ app.initSubmit = function () {
                 // populate the dom with the elements for the next song
                 app.getImages();
                 app.populateDropDown();   
-            } else if (app.currentScore > 0) {
+            } else if (app.currentScore > 1) {
                 // update the current score
                 app.currentScore--;
                 app.$current.html(app.currentScore);
 
-                // app.$gallery
+                // show the hints
+                $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
+                $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
+                $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
+            } else {
+                app.$form.fadeOut();
+                app.$guessResult.fadeIn();
             }
         }
     });
@@ -121,7 +128,7 @@ app.init = function () {
     app.getImages();
     app.populateDropDown();
     app.initSubmit();
-    console.log(app.quizList.length);
+    // console.log(app.quizList.length);
 };
 
 $(function () {
