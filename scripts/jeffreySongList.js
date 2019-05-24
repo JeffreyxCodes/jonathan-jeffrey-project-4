@@ -109,10 +109,11 @@ const songArray = [
       "I'm Just A Poor Boy",
       "Gun Against His Head",
       "Make You Cry",
-      "thunderbolt",
-      "galileo",
-      "satan",
-      "spit+water"
+      "Thunderbolt and Lightning",
+      ` Galileo Figaro
+        Magnifico-o-o-o-o.`,
+      "Beelzebub has a Devil",
+      "Spit in my Eye?"
     ],
     lyric: `Is this the real life?
             Is this just fantasy?
@@ -198,6 +199,17 @@ const songArray = [
       "across+the+line",
       "old+and+young",
       "moral"
+    ],
+    hints: [
+      "I've been Losing Sleep",
+      "But, baby, I've been",
+      "I've been Praying Hard",
+      "No More Counting Dollars",
+      "We'll Be Counting Stars",
+      "Swing my Heart",
+      "Across the Line",
+      "Not That Old Young But..",
+      "Doing The Wrong Thing"
     ],
     lyric: `Lately, I've been, I've been losing sleep
             Dreaming about the things that we could be
@@ -307,6 +319,17 @@ const songArray = [
       "street",
       "sunrise"
     ],
+    hints: [
+      "Another Sprint, Another Step",
+      "Hopped Out That DeLorean",
+      "Can Sleep When I Die",
+      "Wanna Piece of the Pie",
+      "Keys To The Ridey",
+      "World Is Up For Grabs",
+      "Trudging Through The Mud ",
+      "Street Like We Some Warriors",
+      "I'll See The Sunrise"
+    ],
     lyric: `You know I'm back like I never left
             Another sprint, another step
             Another day, another breath
@@ -391,6 +414,17 @@ const songArray = [
       "sun",
       "shame"
     ],
+    hints: [
+      "For A Good Time Call",
+      "Ringin' My Doorbell",
+      "I feel the love",
+      "1, 2, 3 drink",
+      "swing from the chandelier",
+      "bird through the night",
+      "glass full until morning light",
+      "Sun is up",
+      "here comes the shame"
+    ],
     lyric: `Party girls don't get hurt
             Can't feel anything, when will I learn
             I push it down, push it down
@@ -464,6 +498,18 @@ const songArray = [
       "treasure+gold",
       "grip+hand+palm"
     ],
+    hints: [
+      "Fire Starting",
+      "In My Heart",
+      "see you crystal clear",
+      "story to be told",
+      "Tears are gonna fall",
+      "The scars of your love",
+      "through every open door",
+      "sorrow into treasured gold",
+      "inside of your hand"
+    ],
+    // Finish initial hints
     lyric: `There's a fire starting in my heart
             Reaching a fever pitch, it's bringing me out the dark
             Finally I can see you crystal clear
@@ -562,6 +608,17 @@ const songArray = [
       "eye+focus",
       "celsius",
       "door"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `Lately I've been hard to reach, I've been too long on my own
             Everybody has a private world where they can be alone
@@ -718,6 +775,17 @@ const songArray = [
       "duck",
       "fox+red"
     ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
     lyric: `Dog goes woof, cat goes meow
             Bird goes tweet, and mouse goes squeak
             Cow goes moo. Frog goes croak, and the elephant goes toot
@@ -794,6 +862,17 @@ const songArray = [
       "sand",
       "sword"
     ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
     lyric: `I used to rule the world
             Seas would rise when I gave the word
             Now in the morning I sleep alone
@@ -847,6 +926,7 @@ const songArray = [
             But that was when I ruled the world`
   },
   {
+    //   Jonathan songs start
     artist: "Bruno Mars",
     track: "Uptown Funk",
     convert: [
@@ -859,6 +939,17 @@ const songArray = [
       "Hot",
       "Police",
       "Fireman"
+    ],
+    hints: [
+      "That Ice Cold",
+      "That White Gold",
+      "Good Girls Straight Masterpieces",
+      "Up In The City",
+      "Got Chucks On",
+      "Kiss Myself, I'm so Pretty",
+      "I'm Too Hot (Hot Damn)",
+      "Called a Police",
+      "And A Fireman"
     ],
     lyric: ` This hit, that ice cold
             Michelle Pfeiffer, that white gold
@@ -899,6 +990,17 @@ const songArray = [
       "Flowers",
       "Diamonds"
     ],
+    hints: [
+      "Picture Youself",
+      "A Boat On A River",
+      "With Tangerine",
+      "Trees",
+      "Marmalade Skies",
+      "A Girl With Kaleidoscope Eyes",
+      "Sun In Her Eyes",
+      "Drift Past The Flowers",
+      "In The Sky With Diamonds"
+    ],
     lyric: ` Picture yourself in a boat on a river
               With tangerine trees and marmalade skies.
               Somebody calls you, you answer quite slowly,
@@ -932,10 +1034,22 @@ const songArray = [
       "Constellations",
       "Mind",
       "Toronto",
-      "Kaleidoscope",
       "Checkerboard+Floors",
       "Riding+on+Horseback",
-      "Mic"
+      "Mic",
+      "Morning",
+      "Riot"
+    ],
+    hints: [
+      "Left Your House This Morning",
+      "Coulda Been The Wine",
+      "I Saw The Constellations",
+      "With Working On My Mind",
+      "That Night In Toronto",
+      "With The Checkerboard Floors",
+      "Riding On Horseback",
+      "Your House This Morning",
+      "Middle Of That Riot"
     ],
     lyric: ` I left your house this morning
             'Bout a quarter after nine
@@ -984,6 +1098,18 @@ const songArray = [
       "Eyes",
       "Queen+of+England"
     ],
+    // Start here next
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
     lyric: `  I'm gonna fight 'em all
               A seven nation army couldn't hold me back
               They're gonna rip it off
@@ -1029,6 +1155,17 @@ const songArray = [
       "Death+Trap",
       "Born",
       "Run"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `  In the day we sweat it out on the streets of a runaway American dream
               At night we ride through the mansions of glory in suicide machines
@@ -1090,6 +1227,17 @@ const songArray = [
       "Tin+Can",
       "Above+The+World"
     ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
     lyric: `  Ground Control to Major Tom
               Ground Control to Major Tom
               Take your protein pills and put your helmet on
@@ -1139,6 +1287,17 @@ const songArray = [
       "Dance",
       "Loves",
       "Spinning"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `  Clock strikes upon the hour
               And the sun begins to fade
@@ -1213,6 +1372,17 @@ const songArray = [
       "Kitchen",
       "Pastries",
       "Lexus"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `  Yea, yea I'm out that Brooklyn, now I'm down in Tribeca
               Right next to DeNiro, but I'll be hood forever
@@ -1309,6 +1479,17 @@ const songArray = [
       "Poker",
       "Face",
       "Roll"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `  I wanna hold 'em like they do in Texas plays
               Fold 'em, let 'em, hit me, raise it baby stay with me (I love it)
@@ -1410,6 +1591,17 @@ const songArray = [
       "Candle",
       "Hotel California"
     ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
     lyric: `  On a dark desert highway, cool wind in my hair
               Warm smell of colitas, rising up through the air
               Up ahead in the distance, I saw a shimmering light
@@ -1470,6 +1662,17 @@ const songArray = [
       "ice",
       "skate",
       "gasoline"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `Somebody once told me the world is gonna roll me
             I ain't the sharpest tool in the shed
@@ -1536,6 +1739,17 @@ const songArray = [
       "love",
       "hazmat+suit",
       "cats"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `Ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha, Feel Good
             Sha, sha ba da, sha ba da, Feel Good
@@ -1613,6 +1827,17 @@ const songArray = [
       "clear+skies",
       "rainbow"
     ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
+    ],
     lyric: `Ooh, ooh, ooh
             Ooh, ooh
             Somewhere over the rainbow
@@ -1674,6 +1899,17 @@ const songArray = [
       "meditate+person",
       "love",
       "protest+rally"
+    ],
+    hints: [
+      "No Escape From Reality",
+      "Open Your Eyes",
+      "I'm Just A Poor Boy",
+      "Gun Against His Head",
+      "Make You Cry",
+      "thunderbolt",
+      "galileo",
+      "satan",
+      "spit+water"
     ],
     lyric: `People killin' people dyin'
             Children hurtin', I hear them cryin'
