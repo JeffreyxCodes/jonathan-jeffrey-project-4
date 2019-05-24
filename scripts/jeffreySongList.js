@@ -922,5 +922,881 @@ const songArray = [
               With plasticine porters with looking glass ties,
               Suddenly someone is there at the turnstile,
               The girl with kaleidoscope eyes.`
+  },
+  {
+    artist: "The Tragically Hip",
+    track: "Bobcaygeon",
+    convert: [
+      "Morning",
+      "Wine",
+      "Constellations",
+      "Mind",
+      "Toronto",
+      "Kaleidoscope",
+      "Checkerboard+Floors",
+      "Riding+on+Horseback",
+      "Mic"
+    ],
+    lyric: ` I left your house this morning
+            'Bout a quarter after nine
+            Coulda been the Willie Nelson
+            Coulda been the wine
+            When I left your house this morning,
+            It was a little after nine
+            It was in Bobcaygeon, I saw the constellations
+            Reveal themselves, one star at time
+            Drove back to town this morning
+            With working on my mind
+            I thought of maybe quittin'
+            Thought of leavin' it behind
+            Went back to bed this morning
+            And as I'm pullin' down the blind
+            Yeah, the sky was dull and hypothetical
+            And fallin' one cloud at a time
+            That night in Toronto
+            With its checkerboard floors
+            Riding on horseback
+            And keeping order restored
+            'Til The Men They Couldn't Hang
+            Stepped to the mic and sang
+            And their voices rang with that Aryan twang
+            I got to your house this morning
+            Just a little after nine
+            In the middle of that riot
+            Couldn't get you off my mind
+            So, I'm at your house this morning
+            Just a little after nine
+            'Cause, it was in Bobcaygeon
+            Where I saw the constellations reveal themselves
+            One star at time`
+  },
+  {
+    artist: "The White Stripes",
+    track: "Seven Nation Army",
+    convert: [
+      "Fight",
+      "Army",
+      "Rip",
+      "Time",
+      "Mind",
+      "Cigarette",
+      "Message",
+      "Eyes",
+      "Queen+of+England"
+    ],
+    lyric: `  I'm gonna fight 'em all
+              A seven nation army couldn't hold me back
+              They're gonna rip it off
+              Taking their time right behind my back
+              And I'm talking to myself at night
+              Because I can't forget
+              Back and forth through my mind
+              Behind a cigarette
+              And the message coming from my eyes
+              Says leave it alone
+              Don't want to hear about it
+              Every single one's got a story to tell
+              Everyone knows about it
+              From the Queen of England to the hounds of hell
+              And if I catch it coming back my way
+              I'm gonna serve it to you
+              And that ain't what you want to hear
+              But that's what I'll do
+              And the feeling coming from my bones
+              Says find a home
+              I'm going to Wichita
+              Far from this opera for evermore
+              I'm gonna work the straw
+              Make the sweat drip out of every pore
+              And I'm bleeding, and I'm bleeding, and I'm bleeding
+              Right before the lord
+              All the words are gonna bleed from me
+              And I will sing no more
+              And the stains coming from my blood
+              Tell me go back home
+              `
+  },
+  {
+    artist: "Bruce Springsteen",
+    track: "Born to Run",
+    convert: [
+      "Sweat",
+      "Streets",
+      "Mansions",
+      "Highway",
+      "Fuel",
+      "Rips",
+      "Death+Trap",
+      "Born",
+      "Run"
+    ],
+    lyric: `  In the day we sweat it out on the streets of a runaway American dream
+              At night we ride through the mansions of glory in suicide machines
+              Sprung from cages out on highway nine,
+              Chrome wheeled, fuel injected, and steppin' out over the line
+              H-Oh, Baby this town rips the bones from your back
+              It's a death trap, it's a suicide rap
+              We gotta get out while we're young
+              'Cause tramps like us, baby we were born to run
+              Yes, girl we were
+              Wendy let me in I wanna be your friend
+              I want to guard your dreams and visions
+              Just wrap your legs 'round these velvet rims
+              And strap your hands 'cross my engines
+              Together we could break this trap
+              We'll run till we drop, baby we'll never go back
+              H-Oh, Will you walk with me out on the wire
+              'Cause baby I'm just a scared and lonely rider
+              But I gotta know how it feels
+              I want to know if love is wild
+              Babe I want to know if love is real
+              Oh, can you show me
+              Beyond the Palace hemi-powered drones scream down the boulevard
+              Girls comb their hair in rearview mirrors
+              And the boys try to look so hard
+              The amusement park rises bold and stark
+              Kids are huddled on the beach in a mist
+              I wanna die with you Wendy on the street tonight
+              In an everlasting kiss
+              One, two, three, four
+              The highway's jammed with broken heroes on a last chance power drive
+              Everybody's out on the run tonight
+              But there's no place left to hide
+              Together Wendy we can live with the sadness
+              I'll love you with all the madness in my soul
+              H-Oh, Someday girl I don't know when
+              We're gonna get to that place
+              Where we really wanna go
+              And we'll walk in the sun
+              But till then tramps like us
+              Baby we were born to run
+              Oh honey, tramps like us
+              Baby we were born to run
+              Come on with me, tramps like us
+              Baby we were born to run
+              `
+  },
+  {
+    artist: "David Bowie",
+    track: "Space Oddity",
+    convert: [
+      "Protein",
+      "Pills",
+      "Helmet",
+      "Countdown",
+      "Ignition",
+      "Love",
+      "Lift+Off",
+      "Tin+Can",
+      "Above+The+World"
+    ],
+    lyric: `  Ground Control to Major Tom
+              Ground Control to Major Tom
+              Take your protein pills and put your helmet on
+              Ground Control to Major Tom
+              Commencing countdown, engines on
+              Check ignition and may God's love be with you
+              Ten, Nine, Eight, Seven, Six, Five, Four, Three, Two, One, Lift off
+              This is Ground Control to Major Tom
+              You've really made the grade
+              And the papers want to know whose shirts you wear
+              Now it's time to leave the capsule if you dare
+              This is Major Tom to Ground Control
+              I'm stepping through the door
+              And I'm floating in a most peculiar way
+              And the stars look very different today
+              For here
+              Am I sitting in a tin can
+              Far above the world
+              Planet Earth is blue
+              And there's nothing I can do
+              Though I'm past one hundred thousand miles
+              I'm feeling very still
+              And I think my spaceship knows which way to go
+              Tell my wife I love her very much she knows
+              Ground Control to Major Tom
+              Your circuit's dead, there's something wrong
+              Can you hear me, Major Tom?
+              Can you hear me, Major Tom?
+              Can you hear me, Major Tom?
+              Can you...
+              Here am I floating round my tin can
+              Far above the Moon
+              Planet Earth is blue
+              And there's nothing I can do
+              `
+  },
+  {
+    artist: "Whitney Houston",
+    track: "I Wanna Dance with Somebody (Who Loves Me)",
+    convert: [
+      "Clock",
+      "Sun",
+      "Time",
+      "Chase",
+      "Light",
+      "Calls",
+      "Dance",
+      "Loves",
+      "Spinning"
+    ],
+    lyric: `  Clock strikes upon the hour
+              And the sun begins to fade
+              Still enough time to figure out
+              How to chase my blues away
+              I've done alright up to now
+              It's the light of day that shows me how
+              And when the night falls, loneliness calls
+              Oh, I wanna dance with somebody
+              I wanna feel the heat with somebody
+              Yeah, I wanna dance with somebody
+              With somebody who loves me
+              Oh, I wanna dance with somebody
+              I wanna feel the heat with somebody
+              Yeah, I wanna dance with somebody
+              With somebody who loves me
+              I've been in love and lost my senses
+              Spinning through the town
+              Sooner or later, the fever ends
+              And I wind up feeling down
+              I need a man who'll take a chance
+              On a love that burns hot enough to last
+              So when the night falls
+              My lonely heart calls
+              Oh, I wanna dance with somebody
+              I wanna feel the heat with somebody
+              Yeah, I wanna dance with somebody
+              With somebody who loves me
+              Oh, I wanna dance with somebody
+              I wanna feel the heat with somebody
+              Yeah, I wanna dance with somebody
+              With somebody who loves me
+              Somebody oo Somebody oo
+              Somebody who loves me yeah
+              Somebody oo Somebody oo
+              To hold me in his arms oh
+              I need a man who'll take a chance
+              On a love that burns hot enough to last
+              So when the night falls
+              My lonely heart calls
+              Oh, I wanna dance with somebody
+              I wanna feel the heat with somebody
+              Yeah, I wanna dance with somebody
+              With somebody who loves me
+              Oh, I wanna dance with somebody
+              I wanna feel the heat with somebody
+              Yeah, I wanna dance with somebody
+              With somebody who loves me
+              Don'tcha wanna dance with me baby
+              Dontcha wanna dance with me boy
+              Hey Don'tcha wanna dance with me baby
+              With somebody who loves me
+              Don'tcha wanna dance say you wanna dance
+              Don'tcha wanna dance
+              Don'tcha wanna dance say you wanna dance
+              Don'tcha wanna dance
+              Don'tcha wanna dance say you wanna dance
+              With somebody who loves me
+              Dance
+              `
+  },
+  {
+    artist: "Jay-Z & Alicia Keys",
+    track: "Empire State of Mind",
+    convert: [
+      "Brooklyn",
+      "Sinatra",
+      "Cop",
+      "Harlem",
+      "Broadway",
+      "McDonalds",
+      "Kitchen",
+      "Pastries",
+      "Lexus"
+    ],
+    lyric: `  Yea, yea I'm out that Brooklyn, now I'm down in Tribeca
+              Right next to DeNiro, but I'll be hood forever
+              I'm the new Sinatra, and, since I made it here
+              I can make it anywhere, yea, they love me everywhere I used to cop in Harlem,
+              All of my Dominicano's right there up on Broadway,
+              Pull me back to that McDonald's, took it to my stashbox, 560 State St.
+              Catch me in the kitchen like a Simmons wippin' pastry's
+              Cruisin' down 8th St., off white Lexus
+              Drivin' so slow, but BK is from Texas
+              Me, I'm out that Bed-Stuy, home of that boy Biggie
+              Now I live on Billboard and I brought my boys with me
+              Say whattup to Ty-Ty, still sippin' Mai Tai's
+              Sittin' courtside, Knicks and Nets give me high five
+              Nigga I be Spike'd out, I could trip a referee
+              Tell by my attitude that I'm most definitely from
+              In New York,
+              Concrete jungle where dreams are made of
+              There's nothin' you can't do
+              Now you're in New York
+              These streets will make you feel brand new
+              Big lights will inspire you
+              Let's hear it for New York, New York, New York
+              Catch me at the X with OG at a Yankee game
+              Shit, I made the Yankee hat more famous then a Yankee can
+              You should know I bleed blue, but I ain't a Crip though
+              But I got a gang of niggas walkin' with my clique though
+              Welcome to the melting pot, corners where we sellin' rock
+              Afrika Bambataa shit, home of the hip-hop
+              Yellow cab, gypsy cab, dollar cab, holla back
+              For foreigners it ain't for, they act like they forgot how to act
+              Eight million stories, out there in it naked
+              City is a pity, half of y'all won't make it
+              Me, I got a plug, Special Ed "I Got It Made"
+              If Jesus payin' Lebron, I'm payin' Dwyane Wade
+              Three dice cee-lo, three card monte
+              Labor Day Parade, rest in peace Bob Marley
+              Statue of Liberty, long live the World Trade
+              Long live the King yo, I'm from the Empire St. that's
+              In New York,
+              Concrete jungle where dreams are made of
+              There's nothin' you can't do
+              Now you're in New York
+              These streets will make you feel brand new
+              Big lights will inspire you
+              Let's hear it for New York, New York, New York
+              Lights is blinding, girls need blinders
+              So they can step out of bounds quick, the sidelines is
+              Lined with casualties, who sip to life casually
+              Then gradually become worse, don't bite the apple, Eve
+              Caught up in the in-crowd, now you're in style
+              End of the winter gets cold, en vogue, with your skin out
+              City of sin, it's a pity on the whim
+              Good girls gone bad, the city's filled with them
+              Mommy took a bus trip, now she got her bust out
+              Everybody ride her, just like a bus route
+              Hail Mary to the city, you're a virgin
+              And Jesus can't save you, life starts when the church end
+              Came here for school, graduated to the high life
+              Ball players, rap stars, addicted to the limelight
+              MDMA got you feelin' like a champion
+              The city never sleeps, better slip you an Ambien
+              In New York,
+              Concrete jungle where dreams are made of
+              There's nothin' you can't do
+              Now you're in New York
+              These streets will make you feel brand new
+              Big lights will inspire you
+              Let's hear it for New York, New York, New York
+              One hand in the air for the big city
+              Street lights, big dreams, all lookin' pretty
+              No place in the world that could compare
+              Put your lighters in the air everybody say yeah, yeah,
+              Yea, yea
+              In New York,
+              Concrete jungle where dreams are made of
+              There's nothin' you can't do
+              Now you're in New York
+              These streets will make you feel brand new
+              Big lights will inspire you
+              Let's hear it for New York, New York, New York
+              `
+  },
+  {
+    artist: "Lady Gaga",
+    track: "Poker Face",
+    convert: [
+      "Hold",
+      "Plays",
+      "Fold",
+      "Hooked",
+      "Heart",
+      "Read",
+      "Poker",
+      "Face",
+      "Roll"
+    ],
+    lyric: `  I wanna hold 'em like they do in Texas plays
+              Fold 'em, let 'em, hit me, raise it baby stay with me (I love it)
+              Love Game intuition play the cards with spades to start
+              And after he's been hooked I'll play the one that's on his heart
+              Oh, oh, oh, oh, oh, oh-oh-e-oh-oh-oh
+              I'll get him hot, show him what I've got
+              Oh, oh, oh, oh, oh, oh-oh-e-oh-oh-oh,
+              I'll get him hot, show him what I've got
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She's got me like nobody)
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She is gonna let nobody)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p poker face
+              (Muh muh muh muh)
+              I wanna roll with him a hard pair we will be
+              A little gambling is fun when you're with me (I love it)
+              Russian Roulette is not the same without a gun
+              And baby when it's love, if its not rough it isn't fun, fun
+              Oh, oh, oh, oh, oh, oh-oh-e-oh-oh-oh
+              I'll get him hot, show him what I've got
+              Oh, oh, oh, oh, oh, oh-oh-e-oh-oh-oh,
+              I'll get him hot, show him what I've got
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She's got me like nobody)
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She is gonna let nobody)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              I won't tell you that I love you
+              Kiss or hug you
+              'Cause I'm bluffing with my muffin
+              I'm not lying I'm just stunning with my love glue gunnin'
+              Just like a chick in the casino
+              Take your bank before I pay you out
+              I promise this, promise this
+              Check this hand cause I'm marvelous
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She's got me like nobody)
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She is gonna let nobody)
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She's got me like nobody)
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She is gonna let nobody)
+              Can't read my,
+              Can't read my,
+              No he can't read my poker face
+              (She's got me like nobody)
+              Can't read my
+              Can't read my
+              No he can't read my poker face
+              (She is gonna let nobody)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              P p p poker face, p p p poker face
+              (Muh muh muh muh)
+              `
+  },
+  {
+    artist: "The Eagles",
+    track: "Hotel California",
+    convert: [
+      "Dark-Desert",
+      "Highway",
+      "Hair",
+      "Air",
+      "Shimmering Light",
+      "Mission+Bell",
+      "Heaven+or+Hell",
+      "Candle",
+      "Hotel California"
+    ],
+    lyric: `  On a dark desert highway, cool wind in my hair
+              Warm smell of colitas, rising up through the air
+              Up ahead in the distance, I saw a shimmering light
+              My head grew heavy and my sight grew dim
+              I had to stop for the night.
+              There she stood in the doorway;
+              I heard the mission bell
+              And I was thinking to myself
+              'This could be heaven or this could be Hell'
+              Then she lit up a candle and she showed me the way
+              There were voices down the corridor,
+              I thought I heard them say
+              Welcome to the Hotel California
+              Such a lovely place (such a lovely place)
+              Such a lovely face.
+              Plenty of room at the Hotel California
+              Any time of year (any time of year) you can find it here
+              Her mind is Tiffany-twisted, she got the Mercedes bends
+              She got a lot of pretty, pretty boys, that she calls friends
+              How they dance in the courtyard, sweet summer sweat
+              Some dance to remember, some dance to forget
+              So I called up the Captain,
+              'Please bring me my wine'
+              He said, 'we haven't had that spirit here since nineteen sixty-nine'
+              And still those voices are calling from far away,
+              Wake you up in the middle of the night
+              Just to hear them say"
+              Welcome to the Hotel California
+              Such a lovely place (such a lovely place)
+              Such a lovely face.
+              They livin' it up at the Hotel California
+              What a nice surprise (what a nice surprise), bring your alibis
+              Mirrors on the ceiling,
+              The pink champagne on ice
+              And she said, 'we are all just prisoners here, of our own device'
+              And in the master's chambers,
+              They gathered for the feast
+              They stab it with their steely knives,
+              But they just can't kill the beast
+              Last thing I remember, I was
+              Running for the door
+              I had to find the passage back to the place I was before
+              'Relax' said the night man,
+              'We are programmed to receive.
+              You can check out any time you like,
+              But you can never leave!'`
+  },
+  {
+    artist: "Smash Mouth",
+    track: "All Star",
+    convert: [
+      "blue+planet",
+      "letter+l",
+      "mind",
+      "streets",
+      "gold+ingot",
+      "shooting+star",
+      "ice",
+      "skate",
+      "gasoline"
+    ],
+    lyric: `Somebody once told me the world is gonna roll me
+            I ain't the sharpest tool in the shed
+            She was looking kind of dumb with her finger and her thumb
+            In the shape of an "L" on her forehead
+            Well the years start coming and they don't stop coming
+            Fed to the rules and I hit the ground running
+            Didn't make sense not to live for fun
+            Your brain gets smart but your head gets dumb
+            So much to do, so much to see
+            So what's wrong with taking the back streets?
+            You'll never know if you don't go
+            You'll never shine if you don't glow
+            Hey now, you're an all-star, get your game on, go play
+            Hey now, you're a rock star, get the show on, get paid
+            And all that glitters is gold
+            Only shooting stars break the mold
+            It's a cool place and they say it gets colder
+            You're bundled up now, wait till you get older
+            But the meteor men beg to differ
+            Judging by the hole in the satellite picture
+            The ice we skate is getting pretty thin
+            The water's getting warm so you might as well swim
+            My world's on fire, how about yours?
+            That's the way I like it and I never get bored
+            Hey now, you're an all-star, get your game on, go play
+            Hey now, you're a rock star, get the show on, get paid
+            All that glitters is gold
+            Only shooting stars break the mold
+            Hey now, you're an all-star, get your game on, go play
+            Hey now, you're a rock star, get the show, on get paid
+            And all that glitters is gold
+            Only shooting stars
+            Somebody once asked could I spare some change for gas?
+            I need to get myself away from this place
+            I said yep what a concept
+            I could use a little fuel myself
+            And we could all use a little change
+            Well, the years start coming and they don't stop coming
+            Fed to the rules and I hit the ground running
+            Didn't make sense not to live for fun
+            Your brain gets smart but your head gets dumb
+            So much to do, so much to see
+            So what's wrong with taking the back streets?
+            You'll never know if you don't go (go!)
+            You'll never shine if you don't glow
+            Hey now, you're an all-star, get your game on, go play
+            Hey now, you're a rock star, get the show on, get paid
+            And all that glitters is gold
+            Only shooting stars break the mold
+            And all that glitters is gold
+            Only shooting stars break the mold`
+  },
+  {
+    artist: "Gorillaz",
+    track: "Feel Good Inc.",
+    convert: [
+      "city+sunset",
+      "camel+hump",
+      "streets",
+      "small+town",
+      "mill+wind",
+      "hand+unite",
+      "love",
+      "hazmat+suit",
+      "cats"
+    ],
+    lyric: `Ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha-ha, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            (Change) Sha, sha (Change) ba da (Change), sha ba da (Change)
+            (Change) Sha, sha (Change) ba da (Change), sha ba da (Change)
+            City's breaking down on a camel's back
+            They just have to go 'cause they don't know whack
+            So while you fill the streets, it's appealing to see
+            You won't get undercounted 'cause you're damned and free
+            You got a new horizon, it's ephemeral style
+            A melancholy town where we never smile
+            And all I wanna hear is the message beep
+            My dreams, they got her kissing, 'cause I don't get sleep, no
+            Windmill, windmill for the land
+            Turn forever hand in hand
+            Take it all in on your stride
+            It is ticking, falling down
+            Love forever, love has freely
+            Turned forever you and me
+            Windmill, windmill for the land
+            Is everybody in?
+            Laughin' gas these hazmats, fast cats
+            Linin' 'em up like ass cracks
+            Play these ponies at the track
+            It's my chocolate attack
+            Shit, I'm steppin' in the heart of this here (yeah)
+            Care Bear rappin' in harder this year (yeah)
+            Watch me as I gravitate, ha-ha-ha-ha-ha!
+            Yo, we gon' ghost town this Motown
+            With yo' sound, you in the blink
+            Gon' bite the dust, can't fight with us
+            With yo' sound, you kill the Inc. 
+            So don't stop, get it, get it (get it)
+            Until you're cheddar head
+            And watch the way I navigate, ha-ha-ha-ha-ha (Ha! Ha-ha-ha-ha-ha-ha-ha)
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Windmill, windmill for the land
+            Turn forever hand in hand
+            Take it all in on your stride
+            It is ticking, falling down
+            Love forever, love has freely
+            Turned forever you and me
+            Windmill, windmill for the land
+            Is everybody in?
+            Don't stop, get it, get it
+            Peep how your captain's in it
+            Steady, watch me navigate, ha-ha-ha-ha-ha!
+            Don't stop, get it, get it
+            Peep how your captain's in it
+            Steady, watch me navigate, ha-ha-ha-ha-ha!
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good
+            Sha, sha ba da, sha ba da, Feel Good`
+  },
+  {
+    artist: "Israel Kamakawiwoʻole",
+    track: "Over the Rainbow",
+    convert: [
+      "rainbow+rain",
+      "bird",
+      "star",
+      "cloudy",
+      "chimney+top",
+      "green+tree",
+      "red+roses",
+      "clear+skies",
+      "rainbow"
+    ],
+    lyric: `Ooh, ooh, ooh
+            Ooh, ooh
+            Somewhere over the rainbow
+            Way up high
+            And the dreams that you dream of
+            Once in a lullaby
+            Somewhere over the rainbow
+            Bluebirds fly
+            And the dreams that you dream of
+            Dreams really do come true
+            Someday, I wish upon a star
+            Wake up where the clouds are far behind me
+            Where trouble melts like lemon drops
+            High above the chimney top
+            That's where you'll find me
+            Somewhere over the rainbow
+            Bluebirds fly
+            And the dreams that you dare to
+            Oh why, oh why can't I?
+            Well, I see trees of green and red roses too
+            I'll watch them bloom for me and you
+            And I think to myself
+            What a wonderful world
+            Well, I see skies of blue and I see clouds of white
+            And the brightness of day
+            I like the dark
+            And I think to myself what a wonderful world
+            The colors of the rainbow so pretty in the sky
+            And also on the faces of people passing by
+            I see friends shaking hands saying
+            How do you do?
+            They're really saying I, I love you
+            I hear babies cry and I watch them grow
+            They'll learn much more then we'll know
+            And I think to myself what a wonderful world
+            World
+            Someday I wish upon a star
+            Wake up where the clouds are far behind me
+            Where trouble melts like lemon drops
+            High above the chimney top
+            That's where you'll find me
+            Oh, somewhere over the rainbow
+            Way up high
+            And the dreams that you dare to
+            Why oh, why can't I?
+            Ooh, ooh
+            Ooh, ooh`
+  },
+  {
+    artist: "The Black Eyed Peas",
+    track: "Where Is the Love?",
+    convert: [
+      "mortal",
+      "children+crying",
+      "world+map",
+      "streets",
+      "cops",
+      "guns+weapon",
+      "meditate+person",
+      "love",
+      "protest+rally"
+    ],
+    lyric: `People killin' people dyin'
+            Children hurtin', I hear them cryin'
+            Can you practice what you preachin'?
+            Would you turn the other cheek again?
+            Mama, mama, mama, tell us what the hell is goin' on
+            Can't we all just get along?
+            Father, father, father help us
+            Send some guidance from above
+            'Cause people got me, got me
+            Questioning
+            (Where's the love)
+            Yo what's going on with the world, momma
+            (Where's the love)
+            Yo people living like they ain't got no mommas
+            (Where's the love)
+            I think they all distracted by the drama and
+            Attracted to the trauma, mamma
+            (Where's the love)
+            I think they don't understand the concept or
+            The meaning of karma
+            (Where's the love)
+            Overseas, yeah they trying to stop terrorism
+            (Where's the love)
+            Over here on the streets the police shoot
+            The people put the bullets in 'em
+            (Where's the love)
+            But if you only got love for your own race
+            (Where's the love)
+            Then you're gonna leave space for others to discriminate
+            (Where's the love)
+            And to discriminate only generates hate
+            And when you hate then you're bound to get irate
+            Madness is what you demonstrate
+            And that's exactly how hate works and operates
+            Man, we gotta set it straight
+            Take control of your mind and just meditate
+            And let your soul just gravitate
+            To the love, so the whole world celebrate it
+            People killin' people dyin'
+            Children hurtin', I hear them cryin'
+            Can you practice what you preachin'?
+            Would you turn the other cheek again?
+            Mama, mama, mama, tell us what the hell is goin' on
+            Can't we all just get along?
+            Father, Father, Father help us
+            Send some guidance from above
+            'Cause people got me, got me questioning
+            (Where's the love)
+            It just ain't the same, always in change
+            (Where's the love)
+            New days are strange, is the world insane?
+            (Where's the love)
+            Nation droppin' bombs killing our little ones
+            (Where's the love)
+            Ongoing suffering as the youth die young
+            (Where's the love)
+            Where's the love when a child gets murdered
+            Or a cop gets knocked down
+            Black lives not now
+            Everybody matter to me
+            All races, y'all don't like what I'm sayin'? Haterade, tall cases
+            Everybody hate somebody
+            Guess we all racist
+            Black Eyed Peas do a song about love and y'all hate this
+            All these protests with different colored faces
+            We was all born with a heart
+            Why we gotta chase it?
+            And every time I look around
+            Every time I look up, every time I look down
+            No one's on a common ground
+            (Where's the love)
+            And if you never speak truth then you never know how love sounds
+            (Where's the love)
+            And if you never know love then you never know God, wow
+            (Where's the love)
+            Where's the love y'all? I don't, I don't know
+            Where's the truth y'all? I don't know
+            People killin' people dyin'
+            Children hurtin', I hear them cryin'
+            Could you practice what you preach?
+            Would you turn the other cheek?
+            Father, Father, Father help us
+            Send some guidance from above
+            'Cause people got me, got me questioning
+            (Where's the love)
+            (Where's the love)
+            Love is the key
+            (Where's the love)
+            Love is the answer
+            (Where's the love)
+            Love is the solution
+            (Where's the love)
+            (Where's the love)
+            They don't want us to love
+            (Where's the love)
+            Love is powerful
+            (Where's the love)
+            (Where's the love)
+            My mama asked me why I never vote never vote
+            'Cause police men want me dead and gone (Dead and gone)
+            That election looking like a joke (Such a joke)
+            And the weed man still sellin' dope
+            Somebody gotta give these niggas hope (Please hope)
+            All he ever wanted was a smoke (My gosh)
+            Said he can't breathe with his hands in the air
+            Layin' on the ground died from a choke
+            (Where's the love)
+            I feel the weight of the world on my shoulders
+            As I'm gettin' older y'all people gets colder
+            Most of us only care about money makin'
+            Selfishness got us followin' the wrong direction
+            Wrong information always shown by the media
+            Negative images is the main criteria
+            Infecting the young minds faster than bacteria
+            Kids wanna act like what they see in the cinemas
+            What happened to the love and the values of humanity?
+            (Where's the love)
+            What happened to the love and the fairness and equality?
+            (Where's the love)
+            Instead of spreading love we're spreading animosity
+            (Where's the love)
+            Lack of understanding leading us away from unity
+            (Where's the love)`
   }
 ];
