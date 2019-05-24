@@ -9,6 +9,7 @@ app.$guessResult = $(`.guessResult`);
 
 app.jeffKey = `12555766-60a7aff87d1d36db9d295d797`;
 app.jonKey = `12587084-ebb22b9796ba7d7909fc305ca`;
+app.colinKey = `12587414-46698cf6327a0b2f9a96c668c`;
 
 app.totalScore = 0;
 app.currentScore = 4;
@@ -50,7 +51,7 @@ app.getImagePromise = function(q) {
     method: `GET`,
     dataType: `jsonp`,
     data: {
-      key: app.jonKey,
+      key: app.colinKey,
       q: q,
       orientation: `horizontal`
     }
@@ -88,6 +89,7 @@ app.getImages = function() {
 app.next = function() {
   // update the total score and current score
   app.totalScore += app.currentScore;
+  app.currentScore = 4;
   app.$total.html(app.totalScore);
   app.$current.html(4);
 
@@ -97,7 +99,7 @@ app.next = function() {
   app.currentSong = songArray[app.currentSongIndex];
 
   // populate the dom with the elements for the next song
-  app.getImages();
+  //   app.getImages();
   app.populateDropDown();
   app.$form.fadeIn();
   app.$guessResult.fadeOut();
@@ -149,7 +151,7 @@ app.initStart = function() {
 app.init = function() {
   app.initStart();
   app.setQuizList();
-  app.getImages();
+  //   app.getImages();
   app.populateDropDown();
   app.initSubmit();
   app.initNext();
