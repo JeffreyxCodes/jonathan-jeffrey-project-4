@@ -1,9 +1,12 @@
 @media (max-width: 900px) {
+  h1 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 25px;
+  main {
+    height: auto;
   }
   .gallery {
     height: auto;
@@ -16,5 +19,14 @@
   }
   .imgContainer:last-child {
     width: 100%;
+  }
+  form {
+    margin: 0;
+    width: 100%;
+  }
+  select,
+  button,
+  [type="submit"] {
+    width: 95%;
   }
 }
