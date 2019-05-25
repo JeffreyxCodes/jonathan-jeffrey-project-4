@@ -18,7 +18,7 @@ app.currentScore = 4;
 app.hintIndex = 0;
 
 // specifies the number of songs per game and number of options per song
-app.totalSongs = 1;
+app.totalSongs = 10;
 app.totalOptions = 10;
 
 app.quizList = undefined;
@@ -158,7 +158,6 @@ app.testImages = function () {
 
 // refresh the DOM with the elements for the next song
 app.next = function () {
-    //   console.log(app.quizList);
     if (app.quizList.length > 1) {
         // if there are still songs on the list
         // reset current score & hintIndex
@@ -178,7 +177,6 @@ app.next = function () {
         app.$form.fadeIn();
     } else {
         // display final score after all songs
-        console.log(app.$finalResults.find(`h2 .finalScore`));
         app.$finalResults.find(`h2 .finalScore`).html(`${app.totalScore} / 40`);
         app.$finalResults.fadeIn();
     }
@@ -248,13 +246,26 @@ app.initStart = function () {
 // initialize the button to restart the game
 app.initRestart = function () {
     $(`.finalResults button`).on(`click`, () => {
+        // reset and display scores for clean start, reset hint to 0
         app.totalScore = 0;
+        app.$total.html(app.totalScore);
         app.currentScore = 4;
+        app.$current.html(app.currentScore);
         app.hintIndex = 0;
+
+        // set a new song list
         app.setQuizList();
+
+        // populate DOM with elements for current song
         // app.getImages();
         app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
         app.populateDropDown();
+
+        // hide song result and display options
+        app.$guessResult.fadeOut();
+        app.$form.fadeIn();
+
+        // hide final results and let the games begin
         app.$finalResults.fadeOut();
     });
 };
@@ -276,7 +287,6 @@ app.init = function () {
     app.initSubmit();
     app.initNext();
     app.initRestart();
-    // console.log(app.quizList.length);
 };
 
 $(function () {
