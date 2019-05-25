@@ -262,8 +262,6 @@ main {
   z-index: 1;
   text-align: center;
   background: #4eb0c2;
-  border: 5px solid black;
-  border-radius: 20px;
 }
 
 .scoreBoard {
@@ -276,7 +274,7 @@ main {
 }
 
 .gallery {
-  height: 80vh;
+  height: 76vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
