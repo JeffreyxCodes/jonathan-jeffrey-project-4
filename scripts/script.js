@@ -118,7 +118,7 @@ app.getImages = function () {
 //-- THIS IS ONLY FOR TESTING, REPLACE THIS WITH "app.getImages" IN PRODUCTION --
 //*******************************************************************************
 //*******************************************************************************
-app.testImages = function() {
+app.testImages = function () {
     const images = [];
     for (let i = 0; i < 9; i++) {
         images.push(`<div class="imgContainer item${i}">
@@ -127,6 +127,7 @@ app.testImages = function() {
                         </div>`);
     }
     app.$gallery.html(images);
+    console.log(app.currentSong.track);
 }
 //*******************************************************************************
 //*******************************************************************************
@@ -134,65 +135,68 @@ app.testImages = function() {
 
 // refresh the DOM with the elements for the next song
 app.next = function () {
-    // update the total score, as well as reset current score & hintIndex
-    app.totalScore += app.currentScore;
-    app.currentScore = 4;
-    app.$total.html(app.totalScore);
-    app.$current.html(4);
-    app.hintIndex = 0;
+    console.log(app.quizList);
+    if (app.quizList.length > 1) { // if there are still songs on the list
+        // reset current score & hintIndex
+        app.currentScore = 4;
+        app.$current.html(4);
+        app.hintIndex = 0;
 
-    // update the song list and current song
-    app.quizList.pop();
-    app.currentSongIndex--;
-    app.currentSong = songArray[app.currentSongIndex];
+        // update the song list and current song
+        app.quizList.pop();
+        app.currentSong = songArray[--app.currentSongIndex];
 
-    // populate the dom with the elements for the next song
-    //   app.getImages();
-    app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
-    app.populateDropDown();
-    app.$guessResult.fadeOut();
-    app.$form.fadeIn();
+        // populate the dom with the elements for the next song
+        //   app.getImages();
+        app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
+        app.populateDropDown();
+        app.$guessResult.fadeOut();
+        app.$form.fadeIn();
+    } else {
+        // display final score
+        app.$finalResults.children(`h2 .finalScore`).html(`${app.totalScore} / 40`);
+        app.$finalResults.fadeIn();
+    }
 };
+
+// display response to a song's final guess
+app.showResult = function (response) {
+    // display the appropriate response
+    app.$form.fadeOut();
+    app.$guessResult.children(`div`).html(response);
+    app.$guessResult.fadeIn();
+}
 
 // initialize the submit button
 app.initSubmit = function () {
     app.$form.on("submit", e => {
         e.preventDefault();
-        console.log(app.currentSong.track);
-        if (app.quizList.length > 0) { // if there are still songs on the list
-            if (app.currentSong.track === app.$select.val()) {
-                // when the user is correct
-                app.$form.fadeOut();
-                app.$guessResult.children(`h2`).html(
-                    `<h2>You Got It! The Correct Song Is Indeed:</h2>
-                    <h2>"${app.currentSong.track}" by ${app.currentSong.artist}</h2>`
-                );
-                app.$guessResult.fadeIn();
-            } else {
-                // when the user is wrong, update the current score
-                app.currentScore--;
-                app.$current.html(app.currentScore);
+        console.log(app.currentSong.track); // FOR TESTING ***********************
+        if (app.currentSong.track === app.$select.val()) {
+            // when the user is correct
+            app.totalScore += app.currentScore;
+            app.$total.html(app.totalScore);
 
-                // changed the styling of already selected options
-                app.$select.children(`option:selected`).css({
-                    "background": "tomato"
-                });
-                if (app.currentScore > 0) { // show hints if not all hints are shown
-                    // show the hints
-                    $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
-                    $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
-                    $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
-                } else {
-                    app.$form.fadeOut();
-                    app.$guessResult.children(`div`).html(
-                        `<h2>You Guessed Wrong! The Correct Song Is Actually:</h2>
-                        <h2>"${app.currentSong.track}" by ${app.currentSong.artist}</h2>`
-                    );
-                    app.$guessResult.fadeIn();
-                }
-            } 
+            app.showResult(`<h2>You Got It! The Correct Song Is Indeed:</h2>
+                    <h2>"${app.currentSong.track}" by ${app.currentSong.artist}</h2>`);
         } else {
-            app.$finalResults.fadeIn();
+            // when the user is wrong, update the current score
+            app.currentScore--;
+            app.$current.html(app.currentScore);
+
+            // changed the styling of already selected options
+            app.$select.children(`option:selected`).css({
+                "background": "tomato"
+            });
+            if (app.currentScore > 0) { // show hints if not all hints are shown
+                // show the hints
+                $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
+                $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
+                $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
+            } else {
+                app.showResult(`<div><h2>You Guessed Wrong! The Correct Song Is Actually:</h2>
+                        <h2>"${app.currentSong.track}" by ${app.currentSong.artist}</h2></div>`);
+            }
         }
     });
 };
