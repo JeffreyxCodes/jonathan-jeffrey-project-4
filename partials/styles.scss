@@ -38,12 +38,12 @@ body {
 
 .totalScore {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
 }
 .currentScore {
   position: absolute;
-  top: 0;
+  top: -2px;
   right: 0;
 }
 .gallery {
@@ -51,9 +51,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   border: 5px solid black;
+  box-sizing: content-box;
 }
 .guessResult {
   text-align: center;
+  h2 {
+    margin: 0;
+  }
 }
 .imgContainer {
   position: relative;
@@ -99,8 +103,12 @@ select,
   border: none;
   border-radius: 5px;
   margin: 10px 5px 0;
-  background: black;
+  background: #262626;
   color: white;
+}
+
+.finalResults {
+  display: none;
 }
 @media (max-width: 600px) {
   .wrapper {
