@@ -1,11 +1,15 @@
 h1 {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3vh;
+}
+h3 {
+  margin: 0;
 }
 
 .hint {
-    font-size: 1.3rem;
-    margin: 0;
-    text-shadow: 0 0 5px white;
-    background-color: rgba(200, 200, 200, 0.2);
+  font-size: 1.3rem;
+  margin: 0;
+  text-shadow: 0 0 5px white;
+  background-color: rgba(200, 200, 200, 0.2);
 }

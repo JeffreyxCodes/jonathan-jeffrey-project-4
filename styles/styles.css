@@ -182,6 +182,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 h1 {
   margin: 0 auto;
   text-align: center;
+  font-size: 3vh;
+}
+
+h3 {
+  margin: 0;
 }
 
 .hint {
@@ -212,6 +217,8 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -220,6 +227,9 @@ form {
 body {
   font-family: "Merriweather", serif;
   height: 100vh;
+}
+
+main {
   background: -webkit-gradient(linear, left top, left bottom, from(#135293), to(#4eb0c2));
   background: linear-gradient(180deg, #135293 0%, #4eb0c2 100%);
 }
@@ -250,16 +260,13 @@ body {
   border-radius: 20px;
 }
 
-.totalScore {
-  position: absolute;
-  top: -2px;
-  left: 0;
-}
-
-.currentScore {
-  position: absolute;
-  top: -2px;
-  right: 0;
+.scoreBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .gallery {
@@ -330,9 +337,14 @@ select,
   height: 40px;
   border: none;
   border-radius: 5px;
-  margin: 10px 5px 0;
+  margin: 5px 5px 0;
   background: #262626;
   color: white;
+  padding: 0 15px;
+}
+
+select {
+  max-width: 95%;
 }
 
 .finalResults {
@@ -340,8 +352,14 @@ select,
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+  .gallery {
+    height: auto;
+  }
   .wrapper {
-    width: 100%;
+    width: 95%;
   }
   .imgContainer {
     width: 50%;

@@ -6,6 +6,8 @@
 body {
   font-family: "Merriweather", serif;
   height: 100vh;
+}
+main {
   background: linear-gradient(
     180deg,
     rgba(19, 82, 147, 1) 0%,
@@ -35,16 +37,19 @@ body {
   border: 5px solid black;
   border-radius: 20px;
 }
-
+.scoreBoard {
+  display: flex;
+  justify-content: space-between;
+}
 .totalScore {
-  position: absolute;
-  top: -2px;
-  left: 0;
+  // position: absolute;
+  // top: -2px;
+  // left: 0;
 }
 .currentScore {
-  position: absolute;
-  top: -2px;
-  right: 0;
+  // position: absolute;
+  // top: -2px;
+  // right: 0;
 }
 .gallery {
   height: 80vh;
@@ -102,22 +107,17 @@ select,
   height: 40px;
   border: none;
   border-radius: 5px;
-  margin: 10px 5px 0;
+  margin: 5px 5px 0;
   background: #262626;
   color: white;
+  padding: 0 15px;
+}
+select {
+  max-width: 95%;
 }
 
 .finalResults {
   display: none;
 }
-@media (max-width: 600px) {
-  .wrapper {
-    width: 100%;
-  }
-  .imgContainer {
-    width: 50%;
-  }
-  .imgContainer:last-child {
-    width: 100%;
-  }
-}
+
+@import "./mediaQueries";
