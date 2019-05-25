@@ -206,12 +206,22 @@ h1 {
 }
 
 form {
+  width: 80%;
   margin: auto;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body {
+  font-family: "Merriweather", serif;
   height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#135293), to(#4eb0c2));
+  background: linear-gradient(180deg, #135293 0%, #4eb0c2 100%);
 }
 
 .wrapper {
@@ -223,6 +233,11 @@ body {
 
 .modal {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   top: 0;
   left: 0;
   bottom: 0;
@@ -230,6 +245,9 @@ body {
   background: white;
   z-index: 1;
   text-align: center;
+  background: #4eb0c2;
+  border: 5px solid black;
+  border-radius: 20px;
 }
 
 .totalScore {
@@ -252,6 +270,10 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 5px solid black;
+}
+
+.guessResult {
+  text-align: center;
 }
 
 .imgContainer {
@@ -294,4 +316,14 @@ body {
 
 .guessResult {
   display: none;
+}
+
+select,
+[type="submit"] {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 5px 0;
+  background: black;
+  color: white;
 }
