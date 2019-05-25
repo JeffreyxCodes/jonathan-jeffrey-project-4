@@ -22,7 +22,7 @@ const songArray = [
       "My Daddy Told Me",
       "Brought Children For Me",
       "Soon I'll Be Sixty",
-      "I wrote A Letter Once"
+      "I Wrote A Letter Once"
     ],
     lyric: `Once I was seven years old, my mama told me
             "Go make yourself some friends or you'll be lonely"

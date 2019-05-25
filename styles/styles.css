@@ -295,6 +295,7 @@ main {
 }
 
 .imgContainer {
+  text-align: center;
   position: relative;
   width: calc(100% / 3);
   height: calc(76vh / 3);
