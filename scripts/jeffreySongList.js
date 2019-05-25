@@ -926,7 +926,6 @@ const songArray = [
             But that was when I ruled the world`
   },
   {
-    //   Jonathan songs start
     artist: "Bruno Mars",
     track: "Uptown Funk",
     convert: [
