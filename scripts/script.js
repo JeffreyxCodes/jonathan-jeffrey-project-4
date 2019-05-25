@@ -99,7 +99,7 @@ app.next = function() {
   app.currentSong = songArray[app.currentSongIndex];
 
   // populate the dom with the elements for the next song
-  //   app.getImages();
+  app.getImages();
   app.populateDropDown();
   app.$form.fadeIn();
   app.$guessResult.fadeOut();
@@ -151,7 +151,7 @@ app.initStart = function() {
 app.init = function() {
   app.initStart();
   app.setQuizList();
-  //   app.getImages();
+  app.getImages();
   app.populateDropDown();
   app.initSubmit();
   app.initNext();

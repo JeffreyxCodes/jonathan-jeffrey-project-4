@@ -94,10 +94,22 @@ body {
 
 select,
 [type="submit"] {
+  text-align: center;
   height: 40px;
   border: none;
   border-radius: 5px;
   margin: 10px 5px 0;
   background: black;
   color: white;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+  .imgContainer {
+    width: 50%;
+  }
+  .imgContainer:last-child {
+    width: 100%;
+  }
 }
