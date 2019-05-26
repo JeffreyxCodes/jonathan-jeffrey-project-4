@@ -1,6 +1,22 @@
 @media (max-width: 900px) {
   h1 {
-    font-size: 25px;
+    font-size: 1.4rem;
+  }
+  
+  .instruction h1 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
   }
 }
 
@@ -8,20 +24,26 @@
   h3 {
     text-align: center;
   }
+
   div.gallery {
     height: auto;
   }
+
+  main.wrapper,
   div.wrapper {
     width: 95%;
   }
+
   div.imgContainer {
     width: 50%;
     height: calc((100vh - 175px) / 5);
   }
+
   form {
     margin: 0;
     width: 100%;
   }
+  
   select,
   button,
   [type="submit"] {

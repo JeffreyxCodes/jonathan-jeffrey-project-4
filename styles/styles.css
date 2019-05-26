@@ -207,7 +207,7 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
-body {
+html {
   font-family: "Merriweather", serif;
 }
 
@@ -222,8 +222,14 @@ h1 {
   font-variant: small-caps;
   text-align: center;
   font-size: 2.4rem;
+  letter-spacing: 2px;
   color: gold;
   text-shadow: -1px -1px 1px darkorange, 2px 2px 2px firebrick;
+}
+
+.instruction h1 {
+  font-size: 3.8rem;
+  margin-bottom: 5vh;
 }
 
 h2 {
@@ -232,6 +238,10 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
 }
 
 .hint {
@@ -281,6 +291,8 @@ h3 {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 2px auto;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .imgContainer {
@@ -297,7 +309,6 @@ h3 {
   height: calc((100vh - 175px) / 3);
   max-height: 450px;
   position: relative;
-  text-align: center;
 }
 
 .imgContainer .hint {
@@ -342,6 +353,13 @@ form {
   display: none;
 }
 
+.guessResult div {
+  color: white;
+  background: #262626;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .guessResult h2 {
   margin: 0;
 }
@@ -361,8 +379,9 @@ button,
   transition: all 0.3s;
 }
 
-select {
-  max-width: 95%;
+button,
+[type="submit"] {
+  padding: 0 20px;
 }
 
 button:hover,
@@ -376,7 +395,19 @@ button:hover,
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 25px;
+    font-size: 1.4rem;
+  }
+  .instruction h1 {
+    font-size: calc(2rem + 1vw);
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4 {
+    font-size: 1.1rem;
   }
 }
 
@@ -387,6 +418,7 @@ button:hover,
   div.gallery {
     height: auto;
   }
+  main.wrapper,
   div.wrapper {
     width: 95%;
   }

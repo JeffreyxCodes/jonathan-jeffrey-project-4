@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   box-sizing: content-box;
   margin: 2px auto;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .imgContainer {
@@ -15,7 +17,6 @@
   height: calc((100vh - 175px) / 3);
   max-height: 450px;
   position: relative;
-  text-align: center;
 
   .hint {
     position: absolute;
