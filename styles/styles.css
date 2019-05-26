@@ -224,6 +224,7 @@ h2 {
 }
 
 .modal {
+  padding-top: 10vh;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -327,7 +328,6 @@ button,
   background: #262626;
   border: 3px solid #262626;
   color: white;
-  padding: 0 15px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -352,6 +352,9 @@ button:hover,
 }
 
 @media (max-width: 600px) {
+  h3 {
+    text-align: center;
+  }
   div.gallery {
     height: auto;
   }
