@@ -146,7 +146,7 @@ app.testImages = function() {
   for (let i = 0; i < 9; i++) {
     images.push(`<div class="imgContainer animated flip slow item${i}">
                             <h2 class="hint">Hint${i} Placeholder</h2>
-                            <img class="cover" src="https://picsum.photos/400/500" alt="">
+                            <img class="cover" src="https://picsum.photos/500/500" alt="">
                         </div>`);
   }
   app.$gallery.html(images);
@@ -173,8 +173,9 @@ app.next = function() {
     //   app.getImages();
     app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
     app.populateDropDown();
-    app.$guessResult.fadeOut();
-    app.$form.fadeIn();
+    app.$guessResult.fadeOut(400, function() {
+        app.$form.fadeIn();
+    });
   } else {
     // display final score after all songs
     app.$finalResults.find(`h2 .finalScore`).html(`${app.totalScore} / 40`);
@@ -185,9 +186,10 @@ app.next = function() {
 // display response to a song's final guess
 app.showResult = function(response) {
   // display the appropriate response
-  app.$form.fadeOut();
-  app.$guessResult.children(`div`).html(response);
-  app.$guessResult.fadeIn();
+  app.$form.fadeOut(400, function() {
+      app.$guessResult.children(`div`).html(response);
+      app.$guessResult.fadeIn();
+  });
 };
 
 // initialize the submit button
@@ -200,10 +202,10 @@ app.initSubmit = function() {
       app.totalScore += app.currentScore;
       app.$total.html(app.totalScore);
 
-      app.showResult(`<h2>You Got It! The Correct Song Is Indeed:</h2>
-                    <h2>"${app.currentSong.track}" by ${
+      app.showResult(`<h3>You Got It! The Correct Song Is Indeed:</h3>
+                    <h3>"${app.currentSong.track}" by ${
         app.currentSong.artist
-      }</h2>`);
+      }</h3>`);
     } else {
       // when the user is wrong, update the current score
       app.currentScore--;
@@ -220,10 +222,10 @@ app.initSubmit = function() {
         $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
         $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
       } else {
-        app.showResult(`<div><h2>You Guessed Wrong! The Correct Song Is Actually:</h2>
-                        <h2>"${app.currentSong.track}" by ${
+        app.showResult(`<h3>You Guessed Wrong! The Correct Song Is Actually:</h3>
+                        <h3>"${app.currentSong.track}" by ${
           app.currentSong.artist
-        }</h2></div>`);
+        }</h3>`);
       }
     }
   });
@@ -262,8 +264,10 @@ app.initRestart = function() {
     app.populateDropDown();
 
     // hide song result and display options
-    app.$guessResult.fadeOut();
-    app.$form.fadeIn();
+    app.$guessResult.fadeOut(400, function() {
+        app.$form.fadeIn();
+    });
+    
 
     // hide final results and let the games begin
     app.$finalResults.fadeOut();
