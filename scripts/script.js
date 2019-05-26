@@ -146,7 +146,7 @@ app.testImages = function () {
     for (let i = 0; i < 9; i++) {
         images.push(`<div class="imgContainer item${i}">
                             <h2 class="hint">Hint${i} Placeholder</h2>
-                            <img class="cover" src="" alt="">
+                            <img class="cover" src="https://picsum.photos/400/500" alt="">
                         </div>`);
     }
     app.$gallery.html(images);

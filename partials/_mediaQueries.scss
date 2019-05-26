@@ -5,20 +5,15 @@
 }
 
 @media (max-width: 600px) {
-  main {
+  div.gallery {
     height: auto;
   }
-  .gallery {
-    height: auto;
-  }
-  .wrapper {
+  div.wrapper {
     width: 95%;
   }
-  .imgContainer {
+  div.imgContainer {
     width: 50%;
-  }
-  .imgContainer:last-child {
-    width: 100%;
+    height: calc((100vh - 160px) / 5);
   }
   form {
     margin: 0;
