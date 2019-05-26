@@ -1,12 +1,46 @@
-.cover {
-  object-fit: cover;
-}
+// gallery styles
+
 .gallery {
-  // height: 80vh;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  box-sizing: content-box;
+  margin: 2px auto;
 }
-// .galleryItem {
-//   width: calc(100% / 3);
-//   height: calc(80vh / 3);
-// }
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  height: calc((100vh - 175px) / 3);
+  max-height: 450px;
+  position: relative;
+  text-align: center;
+
+  .hint {
+    position: absolute;
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    &.cover {
+      object-fit: cover;
+    }
+  }
+}
+
+// toggled to show hints
+.showHint {
+  .hint {
+    display: block;
+  }
+
+  img {
+    opacity: 0.2;
+  }
+}
+

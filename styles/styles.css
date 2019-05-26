@@ -179,116 +179,37 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-h1 {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 2.7vw;
-}
-
-h2 {
-  font-size: 1.2rem;
-}
-
-h3 {
-  margin: 0;
-}
-
-.hint {
-  font-size: 1.3rem;
-  margin: 0;
-  text-shadow: 0 0 5px white;
-  background-color: rgba(200, 200, 200, 0.2);
-}
-
-.cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-form {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 600px) {
-  div.gallery {
-    height: auto;
-  }
-  div.wrapper {
-    width: 95%;
-  }
-  div.imgContainer {
-    width: 50%;
-    height: calc((100vh - 160px) / 5);
-  }
-  form {
-    margin: 0;
-    width: 100%;
-  }
-  select,
-  button,
-  [type="submit"] {
-    width: 95%;
-  }
-}
-
 body {
   font-family: "Merriweather", serif;
 }
 
-main {
-  background: -webkit-gradient(linear, left top, left bottom, from(#135293), to(#4eb0c2));
-  background: linear-gradient(180deg, #135293 0%, #4eb0c2 100%);
-  min-height: 100vh;
-  padding-bottom: 10px;
+h1,
+h2,
+h3 {
+  margin: 0 auto;
 }
 
-.wrapper {
-  width: 80%;
-  max-width: 1440px;
-  margin: auto;
-  position: relative;
-}
-
-.modal {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: white;
-  z-index: 1;
+h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-variant: small-caps;
   text-align: center;
-  background: #4eb0c2;
+  font-size: 2.4rem;
+  color: gold;
+  text-shadow: -1px -1px 1px darkorange, 2px 2px 2px firebrick;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.hint {
+  font-size: 1.3rem;
+  text-shadow: 0 0 5px white;
+  background-color: rgba(200, 200, 200, 0.2);
 }
 
 .scoreBoard {
@@ -298,6 +219,24 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: white;
+  text-shadow: 2px 2px 2px #262626;
+}
+
+.modal {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  background: #4eb0c2;
+}
+
+.finalResults {
+  display: none;
 }
 
 .gallery {
@@ -314,19 +253,7 @@ main {
   margin: 2px auto;
 }
 
-.guessResult {
-  text-align: center;
-}
-
-.guessResult h2 {
-  margin: 0;
-}
-
 .imgContainer {
-  text-align: center;
-  position: relative;
-  width: calc(100% / 3);
-  height: calc((100vh - 160px) / 3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,9 +263,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: calc(100% / 3);
+  height: calc((100vh - 175px) / 3);
+  max-height: 450px;
+  position: relative;
+  text-align: center;
 }
 
-.hint {
+.imgContainer .hint {
   position: absolute;
   display: none;
 }
@@ -346,6 +278,11 @@ main {
 .imgContainer img {
   width: 100%;
   height: 100%;
+}
+
+.imgContainer img.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .showHint .hint {
@@ -356,13 +293,27 @@ main {
   opacity: 0.2;
 }
 
-.cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+form {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .guessResult {
+  text-align: center;
   display: none;
+}
+
+.guessResult h2 {
+  margin: 0;
 }
 
 select,
@@ -394,6 +345,43 @@ button:hover,
   border: 3px solid #262626;
 }
 
-.finalResults {
-  display: none;
+@media (max-width: 900px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  div.gallery {
+    height: auto;
+  }
+  div.wrapper {
+    width: 95%;
+  }
+  div.imgContainer {
+    width: 50%;
+    height: calc((100vh - 175px) / 5);
+  }
+  form {
+    margin: 0;
+    width: 100%;
+  }
+  select,
+  button,
+  [type="submit"] {
+    width: 95%;
+  }
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#135293), to(#4eb0c2));
+  background: linear-gradient(180deg, #135293 0%, #4eb0c2 100%);
+  min-height: 100vh;
+  padding-bottom: 10px;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
 }

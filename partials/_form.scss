@@ -6,3 +6,38 @@ form {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.guessResult {
+  text-align: center;
+  display: none;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+select,
+button,
+[type="submit"] {
+  text-align: center;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 5px 0;
+  background: $secondary-bg-color;
+  border: 3px solid $secondary-bg-color;
+  color: white;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+select {
+  max-width: 95%;
+}
+
+button:hover,
+[type="submit"]:hover {
+  transform: scale(1.1);
+  color: $secondary-bg-color;
+  background: white;
+  border: 3px solid $secondary-bg-color;
+}

@@ -1,0 +1,7 @@
+// scoreboard styles
+.scoreBoard {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-shadow: 2px 2px 2px $secondary-bg-color;
+}
