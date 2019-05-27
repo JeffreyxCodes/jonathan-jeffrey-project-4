@@ -19,7 +19,7 @@ app.currentScore = 4;
 app.hintIndex = 0;
 
 // specifies the number of songs per game and number of options per song
-app.totalSongs = 1;
+app.totalSongs = 5;
 app.totalOptions = 10;
 
 app.quizList = undefined;
@@ -100,7 +100,7 @@ app.getImagePromise = function(q) {
     method: `GET`,
     dataType: `jsonp`,
     data: {
-      key: app.colinKey,
+      key: app.adamKey,
       q: q,
       orientation: `horizontal`
     }
@@ -121,13 +121,9 @@ app.getImages = function() {
     .then((...images) => {
       images = images.map((img, index) => {
         return `<div class="imgContainer animated flip slow item${index}">
-                            <h2 class="hint">${
-                              app.currentSong.hints[index]
-                            }</h2>
-                            <img class="cover" src=${
-                              img[0].hits[0].webformatURL
-                            } alt="${img[0].hits[0].tags}">
-                        </div>`;
+                  <h2 class="hint">${app.currentSong.hints[index]}</h2>
+                  <img class="cover" src=${img[0].hits[0].webformatURL} alt="${img[0].hits[0].tags}">
+                </div>`;
       });
       // put the images into the DOM
       app.$gallery.html(images);
@@ -136,26 +132,6 @@ app.getImages = function() {
       console.log(error);
     });
 };
-
-//*******************************************************************************
-//*******************************************************************************
-//-- THIS IS ONLY FOR TESTING, REPLACE THIS WITH "app.getImages" IN PRODUCTION --
-//*******************************************************************************
-//*******************************************************************************
-app.testImages = function() {
-  const images = [];
-  for (let i = 0; i < 9; i++) {
-    images.push(`<div class="imgContainer animated flip slow item${i}">
-                            <h2 class="hint">Hint${i} Placeholder</h2>
-                            <img class="cover" src="https://picsum.photos/500/500" alt="">
-                        </div>`);
-  }
-  app.$gallery.html(images);
-  console.log(app.currentSong.track);
-};
-//*******************************************************************************
-//*******************************************************************************
-//*******************************************************************************
 
 // refresh the DOM with the elements for the next song
 app.next = function() {
@@ -171,15 +147,14 @@ app.next = function() {
     app.currentSong = songArray[--app.currentSongIndex];
 
     // populate the dom with the elements for the next song
-    //   app.getImages();
-    app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
+    app.getImages();
     app.populateDropDown();
     app.$guessResult.fadeOut(400, function() {
         app.$form.fadeIn();
     });
   } else {
     // display final score after all songs
-    app.$finalResults.find(`h2 .finalScore`).html(`${app.totalScore} / 40`);
+    app.$finalResults.find(`h2 .finalScore`).html(`${app.totalScore} / 20`);
     app.$finalResults.fadeIn(0, function() {
       app.$lyric.fadeOut(0);
     });
@@ -233,8 +208,19 @@ app.initSubmit = function() {
 // initialize the button to see lyric
 app.initLyric = function() {
   $(`.seeLyric`).on("click", () => {
-    let lyric = app.currentSong.lyric.split("\n");
-    lyric = lyric.map(line => `<p>${line}</p>`);
+    let lyric = [
+      `<h3>~ ${app.currentSong.track} ~</h3>`, 
+      `<h4>- by ${app.currentSong.artist} -</h4>`,
+      ...app.currentSong.lyric.split("\n")
+    ];
+
+    lyric = lyric.map(line => {
+      if (line === "") {
+        return "- - - - - - -";
+      } else {
+        return `<p>${line}</p>`;
+      }
+    });
     app.$lyric.find(`.wrapper div`).html(lyric);
 
     app.$lyric.fadeIn();
@@ -269,8 +255,7 @@ app.initRestart = function() {
     app.setQuizList();
 
     // populate DOM with elements for current song
-    // app.getImages();
-    app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
+    app.getImages();
     app.populateDropDown();
 
     // hide song result and display options
@@ -292,8 +277,7 @@ app.init = function() {
   // set the song list to go through for the game
   app.setQuizList();
   // populare the gallery with the relevent images to the song
-  // app.getImages();
-  app.testImages(); // REMOVE IN PRODUCTION & REPLACE WITH ABOVE
+  app.getImages();
   // populate the drop down menu with the appropriate song choices
   app.populateDropDown();
 
