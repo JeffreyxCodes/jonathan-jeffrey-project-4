@@ -19,9 +19,13 @@
   position: relative;
 
   .hint {
+    width: 95%;
     position: absolute;
     display: none;
     text-align: center;
+    text-shadow: 0 0 5px white;
+    padding: 0 4%;
+    background-color: white;
   }
 
   img {
