@@ -7,6 +7,7 @@ app.$total = $(`.totalScore span`);
 app.$current = $(`.currentScore span`);
 app.$guessResult = $(`.guessResult`);
 app.$finalResults = $(`.finalResults`);
+app.$lyric = $(`.lyric`);
 
 app.jeffKey = `12555766-60a7aff87d1d36db9d295d797`;
 app.jonKey = `12587084-ebb22b9796ba7d7909fc305ca`;
@@ -18,7 +19,7 @@ app.currentScore = 4;
 app.hintIndex = 0;
 
 // specifies the number of songs per game and number of options per song
-app.totalSongs = 10;
+app.totalSongs = 1;
 app.totalOptions = 10;
 
 app.quizList = undefined;
@@ -179,14 +180,16 @@ app.next = function() {
   } else {
     // display final score after all songs
     app.$finalResults.find(`h2 .finalScore`).html(`${app.totalScore} / 40`);
-    app.$finalResults.fadeIn();
+    app.$finalResults.fadeIn(0, function() {
+      app.$lyric.fadeOut(0);
+    });
   }
 };
 
 // display response to a song's final guess
 app.showResult = function(response) {
   // display the appropriate response
-  app.$form.fadeOut(400, function() {
+  app.$form.fadeOut(0, function() {
       app.$guessResult.children(`div`).html(response);
       app.$guessResult.fadeIn();
   });
@@ -196,16 +199,14 @@ app.showResult = function(response) {
 app.initSubmit = function() {
   app.$form.on("submit", e => {
     e.preventDefault();
-    console.log(app.currentSong.track); // FOR TESTING ***********************
+
     if (app.currentSong.track === app.$select.val()) {
       // when the user is correct
       app.totalScore += app.currentScore;
       app.$total.html(app.totalScore);
 
       app.showResult(`<h3>You Got It! The Correct Song Is Indeed:</h3>
-                    <h3>"${app.currentSong.track}" by ${
-        app.currentSong.artist
-      }</h3>`);
+                    <h3>"${app.currentSong.track}" by ${app.currentSong.artist}</h3>`);
     } else {
       // when the user is wrong, update the current score
       app.currentScore--;
@@ -223,17 +224,26 @@ app.initSubmit = function() {
         $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
       } else {
         app.showResult(`<h3>Nope, The Correct Song Is Actually:</h3>
-                        <h3>"${app.currentSong.track}" by ${
-          app.currentSong.artist
-        }</h3>`);
+                        <h3>"${app.currentSong.track}" by ${app.currentSong.artist}</h3>`);
       }
     }
   });
 };
 
+// initialize the button to see lyric
+app.initLyric = function() {
+  $(`.seeLyric`).on("click", () => {
+    let lyric = app.currentSong.lyric.split("\n");
+    lyric = lyric.map(line => `<p>${line}</p>`);
+    app.$lyric.find(`.wrapper div`).html(lyric);
+
+    app.$lyric.fadeIn();
+  });
+}
+
 // initialize the button for next song
 app.initNext = function() {
-  $(`.guessResult button`).on("click", () => {
+  $(`.nextSong`).on("click", () => {
     app.next();
   });
 };
@@ -287,9 +297,10 @@ app.init = function() {
   // populate the drop down menu with the appropriate song choices
   app.populateDropDown();
 
-  //initialize the submit button, next button, and restart button
+  //initialize the submit button, next button, lyric button and restart button
   app.initSubmit();
   app.initNext();
+  app.initLyric();
   app.initRestart();
 };
 

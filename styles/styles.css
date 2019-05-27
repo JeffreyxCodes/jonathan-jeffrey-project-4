@@ -244,6 +244,11 @@ h4 {
   font-size: 1.1rem;
 }
 
+.lyric p {
+  font-size: 20px;
+  margin: 5px auto;
+}
+
 .hint {
   font-size: 1.2rem;
   text-shadow: 0 0 5px white;
@@ -264,18 +269,18 @@ h4 {
 
 .modal {
   padding-top: 10vh;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
   z-index: 1;
   text-align: center;
   background: #4eb0c2;
 }
 
-.finalResults {
+.finalResults,
+.lyric {
   display: none;
 }
 
@@ -425,11 +430,6 @@ button:hover,
   form {
     margin: 0;
     width: 100%;
-  }
-  select,
-  button,
-  [type="submit"] {
-    width: 95%;
   }
 }
 
