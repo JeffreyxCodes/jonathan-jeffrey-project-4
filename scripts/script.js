@@ -100,7 +100,7 @@ app.getImagePromise = function(q) {
     method: `GET`,
     dataType: `jsonp`,
     data: {
-      key: app.adamKey,
+      key: app.colinKey,
       q: q,
       orientation: `horizontal`
     }
@@ -122,7 +122,9 @@ app.getImages = function() {
       images = images.map((img, index) => {
         return `<div class="imgContainer animated flip slow item${index}">
                   <h2 class="hint">${app.currentSong.hints[index]}</h2>
-                  <img class="cover" src=${img[0].hits[0].webformatURL} alt="${img[0].hits[0].tags}">
+                  <img class="cover" src=${img[0].hits[0].webformatURL} alt="${
+          img[0].hits[0].tags
+        }">
                 </div>`;
       });
       // put the images into the DOM
@@ -150,7 +152,7 @@ app.next = function() {
     app.getImages();
     app.populateDropDown();
     app.$guessResult.fadeOut(400, function() {
-        app.$form.fadeIn();
+      app.$form.fadeIn();
     });
   } else {
     // display final score after all songs
@@ -165,8 +167,8 @@ app.next = function() {
 app.showResult = function(response) {
   // display the appropriate response
   app.$form.fadeOut(0, function() {
-      app.$guessResult.children(`div`).html(response);
-      app.$guessResult.fadeIn();
+    app.$guessResult.children(`div`).html(response);
+    app.$guessResult.fadeIn();
   });
 };
 
@@ -181,7 +183,9 @@ app.initSubmit = function() {
       app.$total.html(app.totalScore);
 
       app.showResult(`<h3>You Got It! The Correct Song Is Indeed:</h3>
-                    <h3>"${app.currentSong.track}" by ${app.currentSong.artist}</h3>`);
+                    <h3>"${app.currentSong.track}" by ${
+        app.currentSong.artist
+      }</h3>`);
     } else {
       // when the user is wrong, update the current score
       app.currentScore--;
@@ -199,7 +203,9 @@ app.initSubmit = function() {
         $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
       } else {
         app.showResult(`<h3>Nope, The Correct Song Is Actually:</h3>
-                        <h3>"${app.currentSong.track}" by ${app.currentSong.artist}</h3>`);
+                        <h3>"${app.currentSong.track}" by ${
+          app.currentSong.artist
+        }</h3>`);
       }
     }
   });
@@ -209,7 +215,7 @@ app.initSubmit = function() {
 app.initLyric = function() {
   $(`.seeLyric`).on("click", () => {
     let lyric = [
-      `<h3>~ ${app.currentSong.track} ~</h3>`, 
+      `<h3>~ ${app.currentSong.track} ~</h3>`,
       `<h4>- by ${app.currentSong.artist} -</h4>`,
       ...app.currentSong.lyric.split("\n")
     ];
@@ -225,11 +231,12 @@ app.initLyric = function() {
 
     app.$lyric.fadeIn();
   });
-}
+};
 
 // initialize the button for next song
 app.initNext = function() {
   $(`.nextSong`).on("click", () => {
+    app.$lyric.fadeOut();
     app.next();
   });
 };
@@ -260,9 +267,8 @@ app.initRestart = function() {
 
     // hide song result and display options
     app.$guessResult.fadeOut(400, function() {
-        app.$form.fadeIn();
+      app.$form.fadeIn();
     });
-    
 
     // hide final results and let the games begin
     app.$finalResults.fadeOut();
