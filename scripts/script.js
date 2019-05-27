@@ -222,7 +222,7 @@ app.initSubmit = function() {
         $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
         $(`.item${app.hintIndex++}`).toggleClass(`showHint`);
       } else {
-        app.showResult(`<h3>You Guessed Wrong! The Correct Song Is Actually:</h3>
+        app.showResult(`<h3>Nope, The Correct Song Is Actually:</h3>
                         <h3>"${app.currentSong.track}" by ${
           app.currentSong.artist
         }</h3>`);

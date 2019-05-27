@@ -306,7 +306,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: calc(100% / 3);
-  height: calc((100vh - 175px) / 3);
+  height: calc((100vh - 180px) / 3);
   max-height: 450px;
   position: relative;
 }
@@ -314,6 +314,7 @@ h4 {
 .imgContainer .hint {
   position: absolute;
   display: none;
+  text-align: center;
 }
 
 .imgContainer img {
@@ -386,8 +387,6 @@ button,
 
 button:hover,
 [type="submit"]:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   color: #262626;
   background: white;
   border: 3px solid #262626;
@@ -404,9 +403,6 @@ button:hover,
     font-size: 1.3rem;
   }
   h3 {
-    font-size: 1.1rem;
-  }
-  h4 {
     font-size: 1.1rem;
   }
 }

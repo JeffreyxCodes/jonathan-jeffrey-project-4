@@ -14,13 +14,14 @@
   justify-content: center;
   align-items: center;
   width: calc(100% / 3);
-  height: calc((100vh - 175px) / 3);
+  height: calc((100vh - 180px) / 3);
   max-height: 450px;
   position: relative;
 
   .hint {
     position: absolute;
     display: none;
+    text-align: center;
   }
 
   img {
