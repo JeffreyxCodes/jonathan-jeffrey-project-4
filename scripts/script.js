@@ -10,6 +10,7 @@ app.$finalResults = $(`.finalResults`);
 app.$lyric = $(`.lyric`);
 
 app.jeffKey = `12555766-60a7aff87d1d36db9d295d797`;
+app.jeffKey2 = '12815464-b7ab3809098639d58c2eff4d2';
 app.jonKey = `12587084-ebb22b9796ba7d7909fc305ca`;
 app.colinKey = `12587414-46698cf6327a0b2f9a96c668c`;
 app.adamKey = `12587436-d006282491e4918565db2d2e7`;
@@ -100,7 +101,7 @@ app.getImagePromise = function(q) {
     method: `GET`,
     dataType: `jsonp`,
     data: {
-      key: app.colinKey,
+      key: app.jeffKey2,
       q: q,
       orientation: `horizontal`
     }
