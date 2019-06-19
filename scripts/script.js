@@ -31,7 +31,7 @@ app.currentSong = undefined;
 // where possibleIndexes >= arrayLength, mustContain;
 // return an unordered array of length arrayLength of integers containing unique
 // integers between 0 and possibleIndexes, and must include mustContain
-app.getRandomArray = function(possibleIndexes, arrayLength, mustContain) {
+app.getRandomArray = function (possibleIndexes, arrayLength, mustContain) {
   const orderedArray = [];
   const randomArray = [];
 
@@ -69,14 +69,14 @@ app.getRandomArray = function(possibleIndexes, arrayLength, mustContain) {
 };
 
 // set the list of random songs for the game
-app.setQuizList = function() {
+app.setQuizList = function () {
   app.quizList = app.getRandomArray(songArray.length, app.totalSongs);
   app.currentSongIndex = app.quizList[app.quizList.length - 1];
   app.currentSong = songArray[app.currentSongIndex];
 };
 
 // populate the drop down menu with the random options
-app.populateDropDown = function() {
+app.populateDropDown = function () {
   // set the list of random options
   let options = app.getRandomArray(
     songArray.length,
@@ -87,7 +87,7 @@ app.populateDropDown = function() {
   options = options.map(index => {
     return `<option value="${songArray[index].track}">"${
       songArray[index].track
-    }" by ${songArray[index].artist}</option>>`;
+      }" by ${songArray[index].artist}</option>>`;
   });
 
   // put the drop down options onto the DOM
@@ -95,49 +95,47 @@ app.populateDropDown = function() {
 };
 
 // get a promise given a query
-app.getImagePromise = function(q) {
-  return $.ajax({
-    url: `https://pixabay.com/api/`,
-    method: `GET`,
-    dataType: `jsonp`,
-    data: {
-      key: app.jeffKey2,
-      q: q,
-      orientation: `horizontal`
-    }
-  });
+app.getImagePromise = async function (q) {
+  try {
+    const data = await $.ajax({
+      url: `https://pixabay.com/api/`,
+      method: `GET`,
+      dataType: `jsonp`,
+      data: {
+        key: app.jeffKey2,
+        q: q,
+        orientation: `horizontal`
+      }
+    });
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 // populate the DOM with images related to the last song positioned in the array
-app.getImages = function() {
+app.getImages = async function () {
   const imgPromises = [];
 
   for (let i = 0; i < 9; i++) {
     imgPromises.push(
-      app.getImagePromise(songArray[app.currentSongIndex].convert[i])
+      await app.getImagePromise(songArray[app.currentSongIndex].convert[i])
     );
   }
 
-  $.when(...imgPromises)
-    .then((...images) => {
-      images = images.map((img, index) => {
-        return `<div class="imgContainer animated flip slow item${index}">
+  const images = imgPromises.map((img, index) => {
+    return `<div class="imgContainer animated flip slow item${index}">
                   <h2 class="hint">${app.currentSong.hints[index]}</h2>
-                  <img class="cover" src=${img[0].hits[0].webformatURL} alt="${
-          img[0].hits[0].tags
-        }">
-                </div>`;
-      });
-      // put the images into the DOM
-      app.$gallery.html(images);
-    })
-    .fail(error => {
-      console.log(error);
-    });
+                  <img class="cover" src=${img.hits[0].webformatURL} alt="${
+                  img.hits[0].tags}">
+            </div>`;
+  });
+  
+  app.$gallery.html(images);
 };
 
 // refresh the DOM with the elements for the next song
-app.next = function() {
+app.next = function () {
   if (app.quizList.length > 1) {
     // if there are still songs on the list
     // reset current score & hintIndex
@@ -152,29 +150,29 @@ app.next = function() {
     // populate the dom with the elements for the next song
     app.getImages();
     app.populateDropDown();
-    app.$guessResult.fadeOut(400, function() {
+    app.$guessResult.fadeOut(400, function () {
       app.$form.fadeIn();
     });
   } else {
     // display final score after all songs
     app.$finalResults.find(`h2 .finalScore`).html(`${app.totalScore} / 20`);
-    app.$finalResults.fadeIn(0, function() {
+    app.$finalResults.fadeIn(0, function () {
       app.$lyric.fadeOut(0);
     });
   }
 };
 
 // display response to a song's final guess
-app.showResult = function(response) {
+app.showResult = function (response) {
   // display the appropriate response
-  app.$form.fadeOut(0, function() {
+  app.$form.fadeOut(0, function () {
     app.$guessResult.children(`div`).html(response);
     app.$guessResult.fadeIn();
   });
 };
 
 // initialize the submit button
-app.initSubmit = function() {
+app.initSubmit = function () {
   app.$form.on("submit", e => {
     e.preventDefault();
 
@@ -186,7 +184,7 @@ app.initSubmit = function() {
       app.showResult(`<h3>You Got It! The Correct Song Is Indeed:</h3>
                     <h3>"${app.currentSong.track}" by ${
         app.currentSong.artist
-      }</h3>`);
+        }</h3>`);
     } else {
       // when the user is wrong, update the current score
       app.currentScore--;
@@ -206,14 +204,14 @@ app.initSubmit = function() {
         app.showResult(`<h3>Nope, The Correct Song Is Actually:</h3>
                         <h3>"${app.currentSong.track}" by ${
           app.currentSong.artist
-        }</h3>`);
+          }</h3>`);
       }
     }
   });
 };
 
 // initialize the button to see lyric
-app.initLyric = function() {
+app.initLyric = function () {
   $(`.seeLyric`).on("click", () => {
     let lyric = [
       `<h3>~ ${app.currentSong.track} ~</h3>`,
@@ -235,7 +233,7 @@ app.initLyric = function() {
 };
 
 // initialize the button for next song
-app.initNext = function() {
+app.initNext = function () {
   $(`.nextSong`).on("click", () => {
     app.$lyric.fadeOut();
     app.next();
@@ -243,14 +241,14 @@ app.initNext = function() {
 };
 
 // initialize the button to start the game
-app.initStart = function() {
+app.initStart = function () {
   $(".instruction button").on("click", () => {
     $(".instruction").fadeOut();
   });
 };
 
 // initialize the button to restart the game
-app.initRestart = function() {
+app.initRestart = function () {
   $(`.finalResults button`).on(`click`, () => {
     // reset and display scores for clean start, reset hint to 0
     app.totalScore = 0;
@@ -267,7 +265,7 @@ app.initRestart = function() {
     app.populateDropDown();
 
     // hide song result and display options
-    app.$guessResult.fadeOut(400, function() {
+    app.$guessResult.fadeOut(400, function () {
       app.$form.fadeIn();
     });
 
@@ -277,7 +275,7 @@ app.initRestart = function() {
 };
 
 // init
-app.init = function() {
+app.init = function () {
   // initialize the start button to start game
   app.initStart();
 
@@ -295,6 +293,6 @@ app.init = function() {
   app.initRestart();
 };
 
-$(function() {
+$(function () {
   app.init();
 });
